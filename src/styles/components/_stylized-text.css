@@ -1,0 +1,9 @@
+@font-face {
+    font-family: stylized-text;
+    src: url(../../assets/fonts/Balibrush.otf);
+}
+
+.stylized-text{
+    color: white;
+    font-family: stylized-text;
+}
