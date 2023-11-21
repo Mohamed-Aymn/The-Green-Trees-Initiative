@@ -8,29 +8,42 @@
 </head>
 <body>
     <nav class="navbar">
-        <span>Logo</span>
+        <span class="navbar__logo">The Green Trees Initiative</span>
         <ul class="navbar__links-container">
-            <li><a href="www.google.com" class="navbar__links-container__link">page 1</a></li>
-            <li><a href="www.google.com" class="navbar__links-container__link">page 2</a></li>
-            <li><a href="www.google.com" class="navbar__links-container__link navbar__links-container__link--primary">page 3</a></li>
+            <li><a href="www.google.com" class="navbar__links-container__link">Page 1</a></li>
+            <li><a href="www.google.com" class="navbar__links-container__link">Page 2</a></li>
+            <li><a href="www.google.com" class="navbar__links-container__link navbar__links-container__link--primary">Page 3</a></li>
         </ul>
     </nav>
 
     <main>
         <!-- Hero section -->
         <section class="hero">
-            <div> <!-- image should be placed here as a pesudo element-->
-                <div>
+            <div class="hero__first-part">
+                <div class="hero__first-part__img">
+                    <img class="img" src="assets/photos/hero-img.jpg" alt="hero-img.png" />
+                </div>
+                <div class="card card--white">
+                    <div class="card__head">THE ISSUE</div>
                     <h1>Climate change poses the biggest threat to women in developing nations.</h1>
                     <a href="www.google.com">Read more about the enviomentatl and socail cause.</a>
                 </div>
-                <div>#STOP CLIMATE CHANGE</div>
+                <div class="logo">
+                    #STOP CLIMATE CHANGE
+                </div>
             </div>
-            <div>
-                <div>Take Action</div>
+            <div class="hero__second-part card">
+                <div class="card__head card__head--center">Take Action</div>
+                <div class="hero__second-part__text-container">
                 <div>
                     <div>
-                        <h2>Title</h2>
+                        <h2>Learn</h2>
+                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Volunteer</h2>
                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
                     </div>
                 </div>
@@ -42,80 +55,84 @@
                 </div>
                 <div>
                     <div>
-                        <h2>Title</h2>
+                        <h2>Share</h2>
                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h2>Title</h2>
-                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Mission -->
-        <section>
-            <div>What we do</div>
-            <h1>Our mission is to create sustainable work for woment in developing nation while helping to slow climate change</h1>
-            <div>
-                <div>
-                    <img alt="img" src="img" />
+        <section class="mission-seciton section--blue card">
+            <div class="card__head card__head--white">What we do</div>
+            <h1 class="h1-white">Our mission is to create sustainable work for woment in developing nation while helping to slow climate change</h1>
+            <div class="mission-seciton__cards-container">
+                <div class="card">
+                    <div>
+                        <img alt="img" src="assets/photos/plant.jpg" />
+                    </div>
                     <h1>Tree Planting Initiatives</h1>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas ducimus nam, laborum deserunt unde sapiente doloribus minima eveniet magnam at atque laboriosam vel. Optio doloribus iste nisi rerum porro!</div>
+                    <button class="button--primary">Read more</button>
                 </div>
-                <div>
-                    <img alt="img" src="img" />
+                <div class="card">
+                    <div>
+                        <img alt="img" src="assets/photos/farming.jpg" />
+                    </div>
                     <h1>Education and Training</h1>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas ducimus nam, laborum deserunt unde sapiente doloribus minima eveniet magnam at atque laboriosam vel. Optio doloribus iste nisi rerum porro!</div>
+                    <button class="button--primary">Read more</button>
                 </div>
-                <div>
-                    <img alt="img" src="img" />
+                <div class="card">
+                    <div>
+                        <img alt="img" src="assets/photos/farmer.jpg" />
+                    </div>
                     <h1>Advocacy and Campalgning</h1>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas ducimus nam, laborum deserunt unde sapiente doloribus minima eveniet magnam at atque laboriosam vel. Optio doloribus iste nisi rerum porro!</div>
+                    <button class="button--primary">Read more</button>
                 </div>
             </div>
         </section>
 
         <!-- Action -->
-        <section>
-            <h1>LET'S TAKE ACTION NOW TO SAVE THE FUTURE</h1>
-            <div>
+        <section class="action-section section--blue">
+            <h1 class="h1-white">LET'S TAKE ACTION NOW TO SAVE THE FUTURE</h1>
+            <div class="section__sub-section">
                 <div>
-                    <img src="action.png" alt="action-img">
+                    <img src="assets/photos/plant.jpg" alt="action-img">
                 </div>
-                <div>
-                    <div>EVENT</div>
-                    <h2>Earth Day 2018 community tree planting event</h2>
+                <div class="card">
+                    <div class="card__head card__head--white">EVENT</div>
+                    <h2 class="h1-white">Earth Day 2018 community tree planting event</h2>
                     <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tenetur, temporibus illum officiis itaque id perspiciatis ipsa consectetur dolores tempora optio natus neque. Minus, accusamus. Et minima dignissimos quisquam deleniti.</div>
-                    <button>Read more</button>
+                    <button class="button--primary">Read more</button>
                 </div>
             </div>
-            <div>
+            <div class="section__sub-section">
                 <div>
-                    <img src="action.png" alt="action-img">
+                    <img src="assets/photos/doctor.jpg" alt="action-img">
                 </div>
-                <div>
-                    <div>Latest News</div>
+                <div class="card">
+                    <div class="card__head card__head--white">Latest News</div>
                     <h2>Updates from the fall quarterly meeting</h2>
                     <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tenetur, temporibus illum officiis itaque id perspiciatis ipsa consectetur dolores tempora optio natus neque. Minus, accusamus. Et minima dignissimos quisquam deleniti.</div>
-                    <button>Read more</button>
+                    <button class="button--primary">Read more</button>
                 </div>
             </div>
             <div>
                 <div>Subscribe to our Monthly newletter and stay up to date with all news and events</div>
+                <form method="post" action="/newsletter">
+                    <input type="email" name="email">
+                    <button>Readmore</button>
+                </form>
             </div>
-            <form method="post" action="/newsletter">
-                <input type="email" name="email">
-                <button>Readmore</button>
-            </form>
         </section>
     </main>
 
     <footer>
         <div>Logo</div>
-        <div>
+        <div class="footer__content-container">
             <div>
                 <div>Contact Us</div>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo at, optio assumenda delectus architecto dignissimos cumque quidem modi! Voluptatibus, tempore. Illum, dicta repudiandae inventore laboriosam nam officia dolore rerum.</div>

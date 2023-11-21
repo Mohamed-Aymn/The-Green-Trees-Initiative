@@ -1,0 +1,11 @@
+.mission-seciton{
+    height: 100vh;
+}
+
+.mission-seciton__cards-container{
+    display: flex;
+    gap: 2em;
+}
+.hello{
+    color:green;
+}

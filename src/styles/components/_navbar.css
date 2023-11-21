@@ -1,5 +1,10 @@
 .navbar{
-    
+    background-color: white;
+    z-index: 10;
+}
+
+.navbar__logo{
+    font-weight: bolder;
 }
 
 .navbar__links-container{
@@ -9,13 +14,21 @@
 }
 
 .navbar__links-container__link{
-    padding: 0.7em;
+    padding: 0.5em 1em;
     color: grey;
     text-decoration: none;
 }
 
 .navbar__links-container__link--primary{
-    color: black;
-    background-color: aquamarine;
-    border-radius: 1em;
+    color:  var(--primary-blue-color);
+    background-color: var(--primary-green-color);
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar__links-container{
+        gap: 0.2em;
+    }
 }

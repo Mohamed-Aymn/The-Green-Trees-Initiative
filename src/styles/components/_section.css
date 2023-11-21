@@ -1,0 +1,10 @@
+.section--blue{
+    background-color: blue;
+}
+
+.section__sub-section{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
