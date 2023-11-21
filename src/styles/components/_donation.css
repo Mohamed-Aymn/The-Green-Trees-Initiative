@@ -1,0 +1,59 @@
+.donation:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.56;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: brightness(80%);
+    background: #40acb4;
+}
+
+.donation:before {
+    background-position: center center;
+    background-size:cover;
+    filter: grayscale(80%) sepia(40%) contrast(1.22);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../../assets/photos/donation-bg.jpg);
+}
+
+.donation__form{
+    margin-top: 5%;
+    padding: 5%;
+    width: 40%;
+    height: 70%;
+    background-color: var(--primary-blue-color);
+}
+
+.donation__form__custom-amount{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.donation__form__frequency-selection{
+    display: flex;
+}
+
+.donation__form__submission-span{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+.donation__two-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.donation__two-columns__stylized-text{
+    font-size: 500%;
+    margin-right: 10%;
+}

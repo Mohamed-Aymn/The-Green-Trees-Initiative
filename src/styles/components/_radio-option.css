@@ -1,0 +1,44 @@
+.radio-option{
+    align-items: center;
+    transition: 0.4s;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border:1px solid white;
+    color: var(--primary-blue-color);
+    margin-bottom: 0.2%;
+    margin-right: 0.1%;
+}
+
+.radio-option:hover{
+    transition: 0.4s;
+    background-color: var(--primary-blue-color);
+    border:1px solid white;
+    color: white;
+}
+
+.radio-option input{
+    margin-right: 5%;
+    margin-left: 25px;
+    height: 25px;
+    width: 25px;
+    accent-color: var(--primary-blue-color);
+}
+
+.radio-option__amount{
+    font-weight: 700;
+    font-size: 300%;
+    margin-right:5%;
+}
+
+.radio-option__frequency{
+    font-weight: 700;
+    font-size: 125%;
+    padding: 5%;
+    margin-left: 5%;
+}
+
+.radio-option__paragraph{
+    max-width: 50%;
+}
