@@ -1,3 +1,8 @@
+.donation{
+    height: fit-content;
+    position: relative;
+}
+
 .donation:after{
     content: "";
     position: absolute;
@@ -17,6 +22,7 @@
     filter: grayscale(80%) sepia(40%) contrast(1.22);
     content: "";
     position: absolute;
+    height: 100%;
     z-index: -1;
     top: 0;
     bottom: 0;
@@ -27,6 +33,7 @@
 
 .donation__form{
     margin-top: 5%;
+    margin-bottom: 5%;
     padding: 5%;
     width: 40%;
     height: 70%;
@@ -44,6 +51,7 @@
 
 .donation__form__submission-span{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 15%;
 }
