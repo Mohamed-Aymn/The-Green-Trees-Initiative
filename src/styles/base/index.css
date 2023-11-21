@@ -27,15 +27,11 @@ section{
 }
 
 button{
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     font-weight: bold;
     width: fit-content;
     border: none;
-    border-radius: 0.5em;
-}
-
-a {
-    color: var(--primary-green-color);
+    border-radius: 2em;
 }
 
 body {
@@ -55,5 +51,4 @@ h1 {
 html *
 {
     font-family: 'Times New Roman', Times, serif;
-    color: var(--primary-blue-color);
 }
