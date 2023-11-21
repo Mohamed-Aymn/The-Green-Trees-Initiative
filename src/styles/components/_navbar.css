@@ -1,0 +1,21 @@
+.navbar{
+    
+}
+
+.navbar__links-container{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.navbar__links-container__link{
+    padding: 0.7em;
+    color: grey;
+    text-decoration: none;
+}
+
+.navbar__links-container__link--primary{
+    color: black;
+    background-color: aquamarine;
+    border-radius: 1em;
+}
