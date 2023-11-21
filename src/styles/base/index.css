@@ -1,3 +1,39 @@
+body {
+    margin: 0;
+}
+
+main{
+    /* max-width: 95vw; */
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2.5vw;
+}
+
+footer{
+    display: flex;
+    gap: 7em;
+    max-width: 95vw;
+    margin: auto;
+    padding: 5em;
+}
+
+section{
+    padding: 0;
+}
+
+button{
+    padding: 0.5em 1em;
+    font-weight: bold;
+    width: fit-content;
+    border: none;
+    border-radius: 0.5em;
+}
+
 a {
     color: var(--primary-green-color);
 }
@@ -19,4 +55,5 @@ h1 {
 html *
 {
     font-family: 'Times New Roman', Times, serif;
+    color: var(--primary-blue-color);
 }
