@@ -8,14 +8,14 @@ This is @Mohamed-Aymn and @SculptedNYX web project's submission for the "Web pro
 <details>
     <summary>Class naming convention</summary>
     <p>
-        Creative solution inspired form BEM (Block Element Modifier) and SMACSS (Scalable and Modular Architecture for CSS) syling methodologies
+        Creative solution inspired from BEM (Block Element Modifier) and SMACSS (Scalable and Modular Architecture for CSS) styling methodologies
     </p>
 </details>
 
 <details>
     <summary>File structure</summary>
     <p>
-        There is not strict folder structure that should be used to implement these methodologies, but a creative solution is also made here.
+        There is not a strict folder structure that should be used to implement these methodologies, but a creative solution is also made here.
     </p>
 </details>
 
