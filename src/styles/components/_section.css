@@ -1,5 +1,5 @@
 .section--blue{
-    background-color: blue;
+    background-color: var(--primary-blue-color);
 }
 
 .section__sub-section{

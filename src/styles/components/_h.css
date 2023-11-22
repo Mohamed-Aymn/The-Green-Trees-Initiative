@@ -1,3 +1,7 @@
 .h1--white{
     color: white;
 }
+
+.h1--blue{
+    color: var(--primary-blue-color);
+}

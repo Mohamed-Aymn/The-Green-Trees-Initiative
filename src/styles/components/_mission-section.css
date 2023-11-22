@@ -4,8 +4,17 @@
 
 .mission-seciton__cards-container{
     display: flex;
-    gap: 2em;
+    gap: 3em;
+    flex-wrap: nowrap;
 }
-.hello{
-    color:green;
+
+.mission-seciton__cards-container__img-container{
+    width: calc(100wh / 3);
+    height: calc(100vh / 5);
+    translate: 15% -20%;
+    scale: 1.1;
+}
+
+.mission-seciton__cards-conatiner__card{
+    height: 30em;
 }

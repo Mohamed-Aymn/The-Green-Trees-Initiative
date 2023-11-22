@@ -1,6 +1,6 @@
 .card{
     position: relative;
-    padding: 3em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -17,11 +17,18 @@
     position: absolute;
     top: -1em;
     background-color: var(--primary-blue-color);
-    color: white; 
+    color: white;
     width: fit-content;
     padding: 0.5em;
     text-transform: uppercase;
     padding: 0.3em 2em;
+    z-index: 1;
+}
+
+.card__head--in-place{
+    position: static;
+    top: 0em;
+    margin: 3em;
 }
 
 .card__head--white{
