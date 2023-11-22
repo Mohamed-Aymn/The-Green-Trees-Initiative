@@ -7,31 +7,37 @@
 .hero__first-part{
     position: relative;
     padding: 0 5em;
-    /* height: 100%; */
     height: 100vh;
     display: flex;
     justify-content: space-around;
     gap: 2em;
     align-items: center;
 }
-/* 
+
 .hero__first-part::after{
     content: "";
-    position: absolute;
+    position: asbsolute;
     z-index: -1;
     opacity: 0.56;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    object-fit: cover;
+    inset: 0;
     filter: brightness(80%);
     background: #40acb4;
-} */
+}
+
+.hero__first-part__card{
+    max-width: 50%;
+}
 
 .hero__first-part__img{
     position: absolute;
     z-index: -1;
     height: 100%;
+    width: 100%;
+}
+
+.hero__first-part__card__heading{
+    font-size: 4rem;
 }
 
 .hero__second-part{
@@ -46,7 +52,9 @@
 .logo{
     color: white;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-family: Balibrush;
+    letter-spacing: 0.1em;
 }
 
 .hero__second-part__text-container{
