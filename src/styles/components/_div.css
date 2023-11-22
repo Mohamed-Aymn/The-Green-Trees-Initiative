@@ -1,12 +1,12 @@
 .two-column-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
 .two-column-div--top-margin{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10%;
 }
 
