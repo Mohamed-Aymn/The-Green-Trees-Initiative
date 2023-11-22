@@ -11,14 +11,12 @@
 }
 
 .two-column-div--blue--footer{
-    /* position:absolute; */
     overflow: hidden;
     background-color: var(--primary-blue-color);
     display: flex;
     height: 300px;
     width: 100%;
     margin-top: 10%;
-    /* bottom: -25%; */
     left: 0;
 }
 
@@ -27,4 +25,9 @@
     background-color: white;
     flex-direction: row;
     height: fit-content;
+}
+
+.two-column-div--form{
+    display: flex;
+    justify-content: space-between;
 }

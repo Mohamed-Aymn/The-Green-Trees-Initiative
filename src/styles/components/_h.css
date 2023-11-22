@@ -16,6 +16,11 @@
     padding: 0;
 }
 
+.h1--smaller{
+    font-size: 1rem;
+    padding: 0;
+}
+
 .h1--white--large{
     color: white;
     font-size:150%;
