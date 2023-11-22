@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar h-padding">
         <span class="navbar__logo">The Green<br>Trees Initiative</span>
         <ul class="navbar__links-container">
             <li><a href="www.google.com" class="navbar__links-container__link">Page 1</a></li>
@@ -19,20 +19,22 @@
     <main>
         <!-- Hero section -->
         <section class="hero">
-            <div class="hero__first-part">
+            <div class="hero__first-part h-padding">
                 <div class="hero__first-part__img">
-                    <img class="img" src="assets/photos/hero-img.jpg" alt="hero-img.png" />
+                    <div class="green">
+                        <img src="assets/photos/hero-img.jpg" alt="hero-img.png" />
+                    </div>
                 </div>
-                <div class="card card--white">
+                <div class="card card--white hero__first-part__card">
                     <div class="card__head">THE ISSUE</div>
-                    <h1>Climate change poses the biggest threat to women in developing nations.</h1>
-                    <a href="www.google.com">Read more about the enviomentatl and socail cause.</a>
+                    <h1 class="hero__first-part__card__heading">Climate change poses the biggest threat to women in developing nations.</h1>
+                    <a href="www.google.com" class="a--blue">Read more about the enviomentatl and socail cause.</a>
                 </div>
                 <div class="logo">
-                    #STOP CLIMATE CHANGE
+                    #STOP<br>CLIMATE<br>CHANGE
                 </div>
             </div>
-            <div class="hero__second-part card">
+            <div class="hero__second-part card card--green h-padding v-padding">
                 <div class="card__head card__head--center">Take Action</div>
                 <div class="hero__second-part__text-container">
                 <div>
@@ -64,31 +66,31 @@
         </section>
 
         <!-- Mission -->
-        <section class="mission-seciton section--blue card">
-            <div class="card__head card__head--white">What we do</div>
-            <h1 class="h1-white">Our mission is to create sustainable work for woment in developing nation while helping to slow climate change</h1>
+        <section class="mission-seciton section--blue card h-padding v-padding">
+            <div class="card__head card__head--white card__head--in-place">What we do</div>
+            <h1 class="h1--white h1--large">Our mission is to create sustainable work for woment in developing nation while helping to slow climate change</h1>
             <div class="mission-seciton__cards-container">
-                <div class="card">
-                    <div>
-                        <img alt="img" src="assets/photos/plant.jpg" />
+                <div class="mission-seciton__cards-conatiner__card card card--white">
+                    <div class="mission-seciton__cards-container__img-container green">
+                        <img  alt="img" src="assets/photos/plant.jpg" />
                     </div>
-                    <h1>Tree Planting Initiatives</h1>
+                    <h1 class="h1--blue">Tree Planting Initiatives</h1>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas ducimus nam, laborum deserunt unde sapiente doloribus minima eveniet magnam at atque laboriosam vel. Optio doloribus iste nisi rerum porro!</div>
                     <button class="button--primary">Read more</button>
                 </div>
-                <div class="card">
-                    <div>
+                <div class="mission-seciton__cards-conatiner__card card card--white">
+                    <div class="mission-seciton__cards-container__img-container green">
                         <img alt="img" src="assets/photos/farming.jpg" />
                     </div>
-                    <h1>Education and Training</h1>
+                    <h1 class="h1--blue">Education and Training</h1>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas ducimus nam, laborum deserunt unde sapiente doloribus minima eveniet magnam at atque laboriosam vel. Optio doloribus iste nisi rerum porro!</div>
                     <button class="button--primary">Read more</button>
                 </div>
-                <div class="card">
-                    <div>
+                <div class="mission-seciton__cards-conatiner__card card card--white">
+                    <div class="mission-seciton__cards-container__img-container green">
                         <img alt="img" src="assets/photos/farmer.jpg" />
                     </div>
-                    <h1>Advocacy and Campalgning</h1>
+                    <h1 class="h1-blue">Advocacy and Campalgning</h1>
                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas ducimus nam, laborum deserunt unde sapiente doloribus minima eveniet magnam at atque laboriosam vel. Optio doloribus iste nisi rerum porro!</div>
                     <button class="button--primary">Read more</button>
                 </div>
@@ -96,55 +98,63 @@
         </section>
 
         <!-- Action -->
-        <section class="action-section section--blue">
-            <h1 class="h1-white">LET'S TAKE ACTION NOW TO SAVE THE FUTURE</h1>
+        <section class="action-section section--blue h-padding v-padding">
+            <h1 class="section__heading h1--white">LET'S TAKE ACTION NOW TO SAVE THE FUTURE</h1>
             <div class="section__sub-section">
-                <div>
+                <div class="action-section__image-conatiner green">
                     <img src="assets/photos/plant.jpg" alt="action-img">
                 </div>
                 <div class="card">
-                    <div class="card__head card__head--white">EVENT</div>
-                    <h2 class="h1-white">Earth Day 2018 community tree planting event</h2>
+                    <div class="card__head card__head--white card__head--in-place">EVENT</div>
+                    <h2 class="h1-white h1--large">Earth Day 2018 community tree planting event</h2>
                     <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tenetur, temporibus illum officiis itaque id perspiciatis ipsa consectetur dolores tempora optio natus neque. Minus, accusamus. Et minima dignissimos quisquam deleniti.</div>
                     <button class="button--primary">Read more</button>
                 </div>
             </div>
-            <div class="section__sub-section">
-                <div>
+            <div class="section__sub-section section__sub-section--reverse">
+                <div class="action-section__image-conatiner green">
                     <img src="assets/photos/doctor.jpg" alt="action-img">
                 </div>
                 <div class="card">
-                    <div class="card__head card__head--white">Latest News</div>
-                    <h2>Updates from the fall quarterly meeting</h2>
+                    <div class="card__head card__head--white card__head--in-place">Latest News</div>
+                    <h2 class="h1--large">Updates from the fall quarterly meeting</h2>
                     <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tenetur, temporibus illum officiis itaque id perspiciatis ipsa consectetur dolores tempora optio natus neque. Minus, accusamus. Et minima dignissimos quisquam deleniti.</div>
                     <button class="button--primary">Read more</button>
                 </div>
             </div>
-            <div>
-                <div>Subscribe to our Monthly newletter and stay up to date with all news and events</div>
-                <form method="post" action="/newsletter">
-                    <input type="email" name="email">
-                    <button>Readmore</button>
+            
+        </section>
+
+        <!-- contact us -->
+        <section>
+            <div class="card card--green card--row contact-us">
+                <div> <b>Subscribe to our Monthly newletter and <br> stay up to date with all news and events</b></div>
+                <form method="post" action="/newsletter" class="card card--row">
+                    <input type="email" name="email" placeholder="Enter your email address">
+                    <button class="button--secondary">Readmore</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>Logo</div>
         <div class="footer__content-container">
-            <div>
-                <div>Contact Us</div>
+            <div class="footer__content-container__content">
+                <div class="footer__content-container__content__heading">Contact Us</div>
+                <hr>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo at, optio assumenda delectus architecto dignissimos cumque quidem modi! Voluptatibus, tempore. Illum, dicta repudiandae inventore laboriosam nam officia dolore rerum.</div>
             </div>
-            <div>
-                <div>Links</div>
+            <div class="footer__content-container__content">
+                <div class="footer__content-container__content__heading">Links</div>
+                <hr>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo at, optio assumenda delectus architecto dignissimos cumque quidem modi! Voluptatibus, tempore. Illum, dicta repudiandae inventore laboriosam nam officia dolore rerum.</div>
             </div>
-            <div>
-                <div>Follow us</div>
+            <div class="footer__content-container__content">
+                <div class="footer__content-container__content__heading">Follow us</div>
+                <hr>
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo at, optio assumenda delectus architecto dignissimos cumque quidem modi! Voluptatibus, tempore. Illum, dicta repudiandae inventore laboriosam nam officia dolore rerum.</div>
-            </div>
+            </hr>
         </div>
         <div>
             Logo 2

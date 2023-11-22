@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Balibrush;
+    src: url(../../assets/fonts/Balibrush.otf) format("opentype");
+}
+
 :root{
     --primary-green-color: #C1F7D5;
     --primary-blue-color: #354463;
