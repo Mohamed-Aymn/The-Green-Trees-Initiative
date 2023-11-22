@@ -1,10 +1,12 @@
 .footer__content-container{
     display: flex;
+    align-items: center;
     gap: 3em;
 }
 
 .footer__content-container__contnet__heading{
     font-weight: bold;
+    color: var(--primary-blue-color);
     text-transform: uppercase;
 }
 

@@ -5,6 +5,7 @@
 
 .navbar__logo{
     font-weight: bolder;
+    color: var(--primary-blue-color);
 }
 
 .navbar__links-container{
@@ -13,10 +14,22 @@
     gap: 2em;
 }
 
+.navbar__links-container__logo{
+    padding: 0.5em 1em;
+    color: grey;
+    text-decoration: none;
+}
+
 .navbar__links-container__link{
     padding: 0.5em 1em;
     color: grey;
     text-decoration: none;
+}
+
+.navbar__links-container__link:hover{
+    padding: 0.5em 1em;
+    color: grey;
+    text-decoration: underline;
 }
 
 .navbar__links-container__link--primary{
