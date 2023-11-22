@@ -30,27 +30,3 @@
     right: 0;
     background-image: url(../../assets/photos/donation-bg.jpg);
 }
-
-.donation__form{
-    margin-bottom: 5%;
-    padding: 5%;
-    width: 30%;
-    height: 40%;
-    background-color: var(--primary-blue-color);
-}
-
-.donation__form__custom-amount{
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-
-.donation__form__frequency-selection{
-    display: flex;
-}
-
-.donation__form__submission-span{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 15%;
-}
