@@ -51,10 +51,12 @@ img{
     object-fit: cover; 
 }
 
-/* main{
-    max-width: 95vw;
-    margin: auto;
-} */
+input{
+    border-radius: 2em;
+    padding: 0.5em 1.3em;
+    border: none;
+    color: var(--primary-blue-color);
+}
 
 h1 {
     /* color: white; */

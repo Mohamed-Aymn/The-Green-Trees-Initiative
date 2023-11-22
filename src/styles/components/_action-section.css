@@ -3,3 +3,8 @@
     flex-direction: column;
     gap: 2em;
 }
+
+.action-section__image-conatiner{
+    width: 50%;
+    height: calc(100vh / 2);
+}

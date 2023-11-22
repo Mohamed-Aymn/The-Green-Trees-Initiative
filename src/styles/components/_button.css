@@ -2,3 +2,8 @@
     color: var(--primary-blue-color);
     background-color: var(--primary-green-color);
 }
+
+.button--secondary{
+    color: var(--primary-green-color);
+    background-color: var(--primary-blue-color);
+}
