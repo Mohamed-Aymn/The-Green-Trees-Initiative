@@ -41,7 +41,8 @@
 .card__head--in-place{
     position: static;
     top: 0em;
-    margin: 3em 0;
+    margin-bottom: 3em;
+    /* margin: 3em 0; */
 }
 
 .card__head--white{
