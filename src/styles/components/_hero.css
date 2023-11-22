@@ -73,4 +73,12 @@
         display: flex;
         flex-direction: column;
     }
+
+    .hero__first-part__card{
+        max-width: 100%;
+    }
+
+    .hero__first-part__card__heading{
+        font-size: 2.5rem;
+    }
 }

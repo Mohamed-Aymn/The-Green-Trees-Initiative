@@ -6,11 +6,18 @@
 
 .mission-seciton__cards-container__img-container{
     width: 30%;
-    translate: 9% -20%;
-    scale: 1.1;
+    translate: 7% -15%;
+    scale: 1.2;
     overflow: hidden;
 }
 
 .mission-seciton__cards-conatiner__card{
     height: 30em;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .mission-seciton__cards-container{
+        flex-direction: column;
+    }
 }

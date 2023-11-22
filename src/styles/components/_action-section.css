@@ -9,3 +9,15 @@
     /* max-height: 5em; */
     height: calc(100vh / 1.5);
 }
+
+@media only screen and (max-width: 767px) {
+    .action-section__image-conatiner{
+        display: none;
+    }
+
+    .contact-us{
+        flex-direction: column;
+    }
+
+
+}
