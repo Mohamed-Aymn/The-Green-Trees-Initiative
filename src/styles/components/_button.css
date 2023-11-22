@@ -17,7 +17,7 @@
     border: 2px solid var(--primary-blue-color);
 }
 
-.button--secondary{
+.button--secondary:hover{
     border: 2px solid var(--primary-green-color);
     transition: 0.4s;
 }
