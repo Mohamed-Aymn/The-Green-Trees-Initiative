@@ -6,7 +6,7 @@
 
 .hero__first-part{
     position: relative;
-    padding: 0 5em;
+    /* padding: 0 5em; */
     height: 100vh;
     display: flex;
     justify-content: space-around;

@@ -5,3 +5,8 @@
 .h1--blue{
     color: var(--primary-blue-color);
 }
+
+.h1--large{
+    font-size: 3rem;
+    padding: 0;
+}
