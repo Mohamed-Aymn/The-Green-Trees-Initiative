@@ -1,0 +1,32 @@
+.p--large{
+    font-size: larger;
+    font-weight: bolder;
+    width: 80%;
+}
+
+.p--white--large--normal-weight{
+    font-size: larger;
+    font-weight: normal;
+    color: white;
+    width: 80%;
+}
+
+.p--icon-text{
+    display: inline;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.p--white--larger{
+    font-size: 300%;
+    font-weight: bolder;
+    color: white;
+    width: 80%;
+}
+
+.p--white--larger--margian-right{
+    font-size: 300%;
+    font-weight: bolder;
+    padding-right: 15%;
+    color: white;
+}
