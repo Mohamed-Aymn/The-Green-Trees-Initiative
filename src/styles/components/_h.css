@@ -1,3 +1,13 @@
 .h1--white{
     color: white;
 }
+
+.h1--white--large{
+    color: white;
+    font-size:150%;
+}
+
+.h1--white--larger{
+    color: white;
+    font-size:300%;
+}
