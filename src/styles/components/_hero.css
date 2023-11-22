@@ -14,13 +14,24 @@
     gap: 2em;
     align-items: center;
 }
+/* 
+.hero__first-part::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.56;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: brightness(80%);
+    background: #40acb4;
+} */
 
 .hero__first-part__img{
     position: absolute;
-    object-fit: cover;
     z-index: -1;
     height: 100%;
-    width: 100%;
 }
 
 .hero__second-part{
