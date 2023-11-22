@@ -8,6 +8,19 @@
     font-family: stylized-text;
 }
 
+.stylized-text--blue{
+    color: var(--primary-blue-color);
+    font-family: stylized-text;
+}
+
+
+.stylized-text--blue--footer{
+    color: var(--primary-blue-color);
+    font-family: stylized-text;
+    font-size: 300%;
+    margin-left: 100px;
+}
+
 .stylized-text--large{
     color: white;
     font-family: stylized-text;

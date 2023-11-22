@@ -23,6 +23,7 @@ nav{
 footer{
     background-color: white;
     display: flex;
+    justify-content: center;
     gap: 7em;
     max-width: 95vw;
     margin: auto;

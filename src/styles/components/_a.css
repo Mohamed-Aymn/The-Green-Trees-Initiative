@@ -5,3 +5,13 @@
 .a--blue {
     color: var(--primary-blue-color);
 }
+
+.a--nostyling{
+    text-decoration: none;
+    color: unset;
+    transition: 0.4s;
+}
+
+.a--nostyling:hover{
+    text-decoration: underline;
+}

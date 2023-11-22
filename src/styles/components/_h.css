@@ -11,6 +11,11 @@
     padding: 0;
 }
 
+.h1--small{
+    font-size: 2rem;
+    padding: 0;
+}
+
 .h1--white--large{
     color: white;
     font-size:150%;
