@@ -43,11 +43,6 @@ main{
     margin: auto;
 }
 
-h1 {
-    color: white;
-    font-size:150%;
-}
-
 html *
 {
     font-family: 'Times New Roman', Times, serif;

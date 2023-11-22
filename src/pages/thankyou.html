@@ -4,36 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/7541604022.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
-<body>
+<body class="thankyou">
+    <nav class="navbar">
+        <span class="navbar__logo">The Green<br>Trees Initiative</span>
+        <ul class="navbar__links-container">
+            <li><a href="www.google.com" class="navbar__links-container__link">Page 1</a></li>
+            <li><a href="www.google.com" class="navbar__links-container__link">Page 2</a></li>
+            <li><a href="www.google.com" class="navbar__links-container__link navbar__links-container__link--primary">Page 3</a></li>
+        </ul>
+    </nav>
     <main>
         <div>
-            <div>
-                <img src="../assets/photos/kids.jpg" alt="kids" />
-            </div>
-            <h1>Thank you. Your donation helps support families in need and fights climate change.</h1>
-            <div>
-                <div>Share</div>
-                <div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eum quod excepturi. Tempore, illo quo eligendi nihil accusantium adipisci asperiores perspiciatis? Quasi deserunt dignissimos, inventore eveniet a placeat animi minima!
-                    </div>
-                    <div>
-                        <button>Twitter</button>
-                        <button>Facebook</button>
-                        <button>Email</button>
-                        <button>Text</button>
+            <div class="two-column-div--top-margin">
+                <p class="p--white--larger--margian-right">Thank you. Your donation helps support families in need and fights climate change.</p>
+                <div class="card card--white">
+                    <div class="card__head">Share</div>
+                    <div class="two-column-div">
+                        <div>
+                            <p class="p--large">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nesciunt eum quod excepturi. Tempore, 
+                                illo quo eligendi nihil accusantium adipisci asperiores perspiciatis?"
+                            </p>
+                        </div>
+                        <div>
+                            
+                            <button class="button--primary button--primary--bottom-margin button--primary--fixed-size button--primary--left-margin"> <i class="fa-brands fa-twitter fa-lg"><p class="p--icon-text">Twitter</p></i></button>
+                            <button class="button--primary button--primary--bottom-margin button--primary--fixed-size button--primary--left-margin"><i class="fa-brands fa-facebook fa-lg"><p class="p--icon-text">Facebook</p></i></button>
+                            <button class="button--primary button--primary--bottom-margin button--primary--fixed-size button--primary--left-margin"><i class="fa-solid fa-envelope fa-lg"><p class="p--icon-text">Email</p></i></button>
+                            <button class="button--primary button--primary--bottom-margin button--primary--fixed-size button--primary--left-margin"><i class="fa-solid fa-comment fa-lg"><p class="p--icon-text">comment</p></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <div>
-                Thank you so much for giving. We've sent a receipt for your donation to youremail@emailaddress.com. if you have any questions, please don't hesitate to reach out to support@emailaddress.com.
-            </div>
-            <div>
-                WE CAN TAKE ACTION NOW TO SAVE THE FUTURE.
+            <div class="two-column-div--blue--footer">
+                <div class="thankyou__thanks-text">
+                    <p class="p--white--large--normal-weight">
+                        Thank you so much for giving. We've sent a receipt for your donation to <a href="" class="a--green">youremail@emailaddress.com</a>. 
+                        if you have any questions, please don't hesitate to reach out to <a href="" class="a--green">support@emailaddress.com</a>.
+                    </p>
+                </div>
+                <div>
+                    <p class="thankyou__stylized-text stylized-text">
+                        WE CAN TAKE<br>ACTION NOW TO<br>SAVE THE FUTURE
+                    </p>
+                </div>
             </div>
         </div>
     </main> 
