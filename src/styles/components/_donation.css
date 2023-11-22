@@ -32,7 +32,6 @@
 }
 
 .donation__form{
-    margin-top: 5%;
     margin-bottom: 5%;
     padding: 5%;
     width: 40%;
@@ -54,14 +53,4 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 15%;
-}
-
-.donation__two-columns{
-    display: flex;
-    justify-content: space-between;
-}
-
-.donation__two-columns__stylized-text{
-    font-size: 500%;
-    margin-right: 10%;
 }
