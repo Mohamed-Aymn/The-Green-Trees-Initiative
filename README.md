@@ -1,11 +1,11 @@
-# Very Green
+# The Green Trees Initiative
 
 > Save nature by donation to environmental charities.
 
 ## Main Purpose
 
-Frontend vanilla web develoment showcase, not made for an actual company.
-This project displayes the ability to design CSS (styling) folder structure and implementing code design following established design patterns and customizing them accoring to project's needs and also same for handling site's logic using JavaScript.
+Frontend vanilla web development showcase, not made for an actual company.
+This project displays the ability to design a CSS (styling) folder structure and implement code design following established design patterns, customizing them according to the project's needs, and also handling the site's logic using JavaScript.
 
 ## Low Level/Technical Details
 
