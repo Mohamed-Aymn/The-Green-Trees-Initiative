@@ -12,6 +12,10 @@
     transition: 0.4s;
 }
 
+.button--full-width{
+    width: 100%;
+}
+
 .button--primary:hover{
     transition: 0.4s;
     border: 2px solid var(--primary-blue-color);

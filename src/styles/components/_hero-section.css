@@ -39,14 +39,6 @@
     font-size: 4rem;
 }
 
-.logo{
-    color: white;
-    font-weight: bold;
-    font-size: 5rem;
-    font-family: Balibrush;
-    letter-spacing: 0.1em;
-}
-
 @media only screen and (max-width: 767px) {
     .hero__first-part{
         flex-direction: column;

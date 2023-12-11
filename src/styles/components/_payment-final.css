@@ -2,6 +2,8 @@
     height: fit-content;
     position: relative;
     padding: var(--md-space);
+    display: flex;
+    justify-content: space-around;
 }
 
 .payment-final:after{
