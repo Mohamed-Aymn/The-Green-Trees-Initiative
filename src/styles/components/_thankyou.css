@@ -1,8 +1,12 @@
 .thankyou{
-    height: fit-content;
+    /* height: fit-content; */
+    height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--md-space);
 }
-
 
 .thankyou:after{
     content: "";

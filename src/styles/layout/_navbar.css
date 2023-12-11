@@ -1,6 +1,8 @@
 .navbar{
     background-color: white;
     z-index: 10;
+    padding-right: var(--md-space);
+    padding-left: var(--md-space);
 }
 
 .navbar__logo{

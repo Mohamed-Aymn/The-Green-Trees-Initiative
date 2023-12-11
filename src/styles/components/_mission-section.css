@@ -1,3 +1,7 @@
+.mission-section{
+    padding: var(--md-space);
+}
+
 .mission-seciton__cards-container{
     display: flex;
     gap: 3em;

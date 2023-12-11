@@ -1,6 +1,7 @@
 .payment-final{
     height: fit-content;
     position: relative;
+    padding: var(--md-space);
 }
 
 .payment-final:after{

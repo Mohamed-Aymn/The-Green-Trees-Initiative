@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <nav class="navbar h-padding">
+    <nav class="navbar">
         <a href="index.html" class="navbar__links-container__logo"><span class="navbar__logo">The Green<br>Trees Initiative</span></a>
         <ul class="navbar__links-container">
             <li><a href="https://github.com/gigachadteam/Very-Green-WebProject" class="navbar__links-container__link">Github</a></li>
@@ -19,54 +19,54 @@
     <main>
         <!-- Hero section -->
         <section class="hero">
-            <div class="hero__first-part h-padding">
-                <div class="hero__first-part__img">
+                <div class="hero__img">
                     <div class="green">
                         <img src="assets/photos/hero-img.jpg" alt="hero-img.png" />
                     </div>
                 </div>
-                <div class="card card--white hero__first-part__card">
+                <div class="card card--white hero__card">
                     <div class="card__head">THE ISSUE</div>
-                    <h1 class="hero__first-part__card__heading">Climate change poses the biggest threat to women in developing nations.</h1>
+                    <h1 class="hero__card__heading">Climate change poses the biggest threat to women in developing nations.</h1>
                     <a href="www.google.com" class="a--blue">Read more about the enviomentatl and socail cause.</a>
                 </div>
                 <div class="logo">
                     #STOP<br>CLIMATE<br>CHANGE
                 </div>
+        </section>
+
+        <!-- Roles Section -->
+        <section class="roles card card--green">
+            <div class="card__head card__head--center">Roles</div>
+            <div class="roles__text-container">
+            <div>
+                <div>
+                    <h2>Learn</h2>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
+                </div>
             </div>
-            <div class="hero__second-part card card--green h-padding v-padding">
-                <div class="card__head card__head--center">Take Action</div>
-                <div class="hero__second-part__text-container">
+            <div>
                 <div>
-                    <div>
-                        <h2>Learn</h2>
-                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
-                    </div>
+                    <h2>Volunteer</h2>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
                 </div>
+            </div>
+            <div>
                 <div>
-                    <div>
-                        <h2>Volunteer</h2>
-                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
-                    </div>
+                    <h2>Title</h2>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
                 </div>
+            </div>
+            <div>
                 <div>
-                    <div>
-                        <h2>Title</h2>
-                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
-                    </div>
+                    <h2>Share</h2>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
                 </div>
-                <div>
-                    <div>
-                        <h2>Share</h2>
-                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vitae quaerat tenetur molestias! Nemo voluptatibus provident dicta perspiciatis ipsum placeat excepturi fugiat dolorem recusandae facilis aut minima consequatur, eius quia!</div>
-                    </div>
-                </div>
-                </div>
+            </div>
             </div>
         </section>
 
         <!-- Mission -->
-        <section class="mission-seciton section--blue card h-padding v-padding">
+        <section class="mission-seciton section--blue card">
             <div class="card__head card__head--white card__head--in-place">What we do</div>
             <h1 class="h1--white h1--large">Our mission is to create sustainable work for woment in developing nation while helping to slow climate change</h1>
             <div class="mission-seciton__cards-container">
@@ -98,7 +98,7 @@
         </section>
 
         <!-- Action -->
-        <section class="action-section section--blue h-padding v-padding">
+        <section class="action-section section--blue">
             <h1 class="section__heading h1--white">LET'S TAKE ACTION NOW TO SAVE THE FUTURE</h1>
             <div class="section__sub-section">
                 <div class="action-section__image-conatiner green">
@@ -122,18 +122,15 @@
                     <button class="button--primary">Read more</button>
                 </div>
             </div>
-            
         </section>
 
         <!-- contact us -->
-        <section>
-            <div class="card card--green card--row contact-us">
-                <div> <b>Subscribe to our Monthly newletter and <br> stay up to date with all news and events</b></div>
-                <form method="post" action="/newsletter" class="card card--row">
-                    <input class="input--white-round" type="email" name="email" placeholder="Enter your email address">
-                    <button class="button--secondary">Readmore</button>
-                </form>
-            </div>
+        <section class="card card--green card--row contact-us">
+            <div> <b>Subscribe to our Monthly newletter and <br> stay up to date with all news and events</b></div>
+            <form method="post" action="/newsletter" class="card card--row">
+                <input class="input--white-round" type="email" name="email" placeholder="Enter your email address">
+                <button class="button--secondary">Readmore</button>
+            </form>
         </section>
     </main>
 

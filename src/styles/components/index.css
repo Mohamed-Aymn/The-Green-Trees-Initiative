@@ -1,7 +1,8 @@
 @import url(_donation.css);
 @import url(_stylized-text.css);
 @import url(_radio-option.css);
-@import url(_hero.css);
+@import url(_hero-section.css);
+@import url(_roles-section.css);
 @import url(_mission-section.css);
 @import url(_button.css);
 @import url(_h.css);
