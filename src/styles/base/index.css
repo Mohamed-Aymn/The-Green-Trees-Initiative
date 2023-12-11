@@ -1,3 +1,10 @@
+@import url(_inputs.css);
+
+html *
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -30,32 +37,6 @@ footer{
     padding: 5em;
 }
 
-section{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-button{
-    padding: 1em 2em;
-    font-weight: bold;
-    width: fit-content;
-    border: none;
-    border-radius: 2em;
-}
-
-input[type=submit]{
-    padding: 1em 2em;
-    font-weight: bold;
-    width: fit-content;
-    border: none;
-    border-radius: 2em;
-}
-
-body {
-    margin: 0;
-}
-
 img{
     width: 100%; 
     height: 100%;
@@ -66,9 +47,4 @@ img{
     footer{
         flex-direction: column;
     }
-}
-
-html *
-{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
