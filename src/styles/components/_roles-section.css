@@ -1,12 +1,11 @@
-.roles{
+.roles-section{
     padding: var(--md-space);
     height: fit-content;
     z-index: 1;
     background-color: var(--primary-green-color);
     color: var(--primary-blue-color);
+    position: relative;
 }
-
-
 
 .roles__text-container{
     max-width: 95vw;
