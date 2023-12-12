@@ -1,4 +1,3 @@
-@import url(_donation.css);
 @import url(_stylized-text.css);
 @import url(_radio-option.css);
 @import url(_hero-section.css);
@@ -10,8 +9,9 @@
 @import url(_filters.css);
 @import url(_action-section.css);
 @import url(_a.css);
-@import url(_thankyou.css);
+@import url(_appreciation.css);
 @import url(_p.css);
-@import url(_aboutus.css);
-@import url(_payment-final.css);
+@import url(_about-us.css);
+@import url(_payment-first-stage.css);
+@import url(_payment-second-stage.css);
 @import url(_form.css);

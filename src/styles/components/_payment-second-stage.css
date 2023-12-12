@@ -1,0 +1,8 @@
+.payment-second-stage{
+    height: fit-content;
+    position: relative;
+    padding: var(--md-space);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
