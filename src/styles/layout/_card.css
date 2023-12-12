@@ -11,7 +11,7 @@
     background-color: white;
     color: var(--primary-blue-color);
     width: fit-content;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .card--green{
