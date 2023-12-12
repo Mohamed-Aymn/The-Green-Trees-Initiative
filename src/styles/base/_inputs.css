@@ -1,0 +1,33 @@
+button{
+    padding: 1em 2em;
+    font-weight: bold;
+    width: fit-content;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+/* submmit */
+input[type=submit]{
+    padding: 1em 2em;
+    font-weight: bold;
+    width: fit-content;
+    border: none;
+    border-radius: 2em;
+}
+
+/* radio button */
+input[type="radio"]:checked + label {
+    cursor: pointer;
+    background-color: var(--primary-blue-color);
+    color: white;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+

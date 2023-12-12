@@ -1,7 +1,10 @@
 .form{
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     padding: 5%;
-    width: fit-content;
+    /* width: fit-content; */
     height: fit-content;
     background-color: var(--primary-blue-color);
 }
@@ -11,8 +14,26 @@
     margin-bottom: 10%;
 }
 
-.form__frequency-selection{
+.form__multi-elements-line{
     display: flex;
+    gap: 1em;
+}
+
+.form__multi-elements-line label{
+    width: 100%;
+}
+
+.form__multi-elements-line label input, .form__multi-elements-line label select {
+    width: 100%;
+}
+
+.form__multi-elements-line--no-gap{
+    gap: 0;
+}
+
+.form__frequency-selection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .form__field-header{
@@ -42,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15%;
+    margin-top: 2em;
 }
 
 .form__submission-button{

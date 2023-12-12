@@ -1,28 +1,17 @@
-@font-face {
-    font-family: stylized-text;
-    src: url(../../assets/fonts/Balibrush.otf);
-}
-
 .stylized-text{
     color: white;
-    font-family: stylized-text;
+    font-family: Balibrush;
 }
 
+/* sizes */
+.stylized-text--large{
+    font-size: 5rem;
+}
+.stylized-text--md{
+    font-size: 3rem;
+}
+
+/* colors */
 .stylized-text--blue{
     color: var(--primary-blue-color);
-    font-family: stylized-text;
-}
-
-
-.stylized-text--blue--footer{
-    color: var(--primary-blue-color);
-    font-family: stylized-text;
-    font-size: 300%;
-    margin-left: 100px;
-}
-
-.stylized-text--large{
-    color: white;
-    font-family: stylized-text;
-    font-size: 500%;
 }

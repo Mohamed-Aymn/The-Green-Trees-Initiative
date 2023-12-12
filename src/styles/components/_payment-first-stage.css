@@ -1,0 +1,15 @@
+.payment-first-stage{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: var(--md-space);
+    align-items: center;
+    gap: 2em;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .payment-first-stage{
+        flex-direction: column-reverse;
+    }
+}

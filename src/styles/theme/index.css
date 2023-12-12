@@ -1,9 +1,14 @@
+/* fonts */
 @font-face {
     font-family: Balibrush;
     src: url(../../assets/fonts/Balibrush.otf) format("opentype");
 }
 
 :root{
+    /* colors */
     --primary-green-color: #C1F7D5;
     --primary-blue-color: #354463;
+
+    /* spacing */
+    --md-space: 5em;
 }

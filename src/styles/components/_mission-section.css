@@ -1,23 +1,39 @@
+.mission-section{
+    padding: var(--md-space);
+}
+
 .mission-seciton__cards-container{
-    display: flex;
+    display: grid;
     gap: 3em;
     flex-wrap: nowrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
 }
 
 .mission-seciton__cards-container__img-container{
-    width: 30%;
-    translate: 7% -15%;
-    scale: 1.2;
+    height: 15em;
+    width: 100%;
+    z-index: 1;
+    translate: 1em -2em;
+    scale: 1.15;
     overflow: hidden;
 }
 
 .mission-seciton__cards-conatiner__card{
-    height: 30em;
+    height: 100%;
 }
-
 
 @media only screen and (max-width: 900px) {
     .mission-seciton__cards-container{
+        display: flex;
         flex-direction: column;
+        gap: 3em;
+    }
+}
+
+@media only screen and (max-width: 1388px) {
+    .mission-seciton__cards-container__img-container{
+        translate: 0;
+        scale: 1;
     }
 }

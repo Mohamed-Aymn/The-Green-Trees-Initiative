@@ -1,3 +1,10 @@
+@import url(_inputs.css);
+
+html *
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +12,6 @@ body {
 }
 
 main{
-    /* max-width: 95vw; */
     margin: 0;
     padding: 0;
     border: 0;
@@ -22,38 +28,12 @@ nav{
 
 footer{
     background-color: white;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     gap: 7em;
     max-width: 95vw;
     margin: auto;
-    padding: 5em;
-}
-
-section{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-button{
-    padding: 1em 2em;
-    font-weight: bold;
-    width: fit-content;
-    border: none;
-    border-radius: 2em;
-}
-
-input[type=submit]{
-    padding: 1em 2em;
-    font-weight: bold;
-    width: fit-content;
-    border: none;
-    border-radius: 2em;
-}
-
-body {
-    margin: 0;
+    padding: var(--md-space);
 }
 
 img{
@@ -62,13 +42,13 @@ img{
     object-fit: cover; 
 }
 
-@media only screen and (max-width: 767px) {
-    footer{
-        flex-direction: column;
-    }
+section{
+    padding: var(--md-space);
 }
 
-html *
-{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media only screen and (max-width: 1366px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
 }
