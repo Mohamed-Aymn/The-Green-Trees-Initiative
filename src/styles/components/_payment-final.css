@@ -4,6 +4,7 @@
     padding: var(--md-space);
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .payment-final:after{

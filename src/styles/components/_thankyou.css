@@ -1,9 +1,8 @@
 .thankyou{
-    /* height: fit-content; */
 }
 
 .thankyou__upper-part{
- height: 100vh;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -12,34 +11,6 @@
     display: flex;
     justify-content: space-around;
     gap: var(--md-space);
-}
-
-.thankyou__upper-part:after{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    opacity: 0.56;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    filter: brightness(80%);
-    background: #40acb4;
-}
-
-.thankyou__upper-part:before {
-    background-position: center center;
-    background-size:cover;
-    filter: grayscale(80%) sepia(40%) contrast(1.22);
-    content: "";
-    position: absolute;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(../../assets/photos/kidsv2.jpg);
 }
 
 .thankyou__main-text{
