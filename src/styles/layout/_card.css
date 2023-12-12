@@ -26,6 +26,10 @@
     flex-direction: row;
 }
 
+.card--without-spacing{
+    padding: 0;
+}
+
 .card__head{
     position: absolute;
     top: -1em;
@@ -41,8 +45,6 @@
 .card__head--in-place{
     position: static;
     top: 0em;
-    margin-bottom: 3em;
-    /* margin: 3em 0; */
 }
 
 .card__head--white{

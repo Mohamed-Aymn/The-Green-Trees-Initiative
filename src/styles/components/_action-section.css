@@ -2,6 +2,11 @@
     padding: var(--md-space);
 }
 
+.action-section__row{
+    display: flex;
+    gap: var(--md-space);
+}
+
 .action-section__card-container{
     display: flex;
     flex-direction: column;
