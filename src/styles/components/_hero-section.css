@@ -2,7 +2,6 @@
     width: 100wh;
     min-height: 100vh;
     padding: 0;
-    /* height: 100vh; */
     position: relative;
     padding: 0 var(--md-space);
     height: 100vh;
@@ -40,15 +39,15 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .hero__first-part{
+    .hero{
         flex-direction: column;
     }
 
-    .hero__first-part__card{
+    .hero__card{
         max-width: 100%;
     }
 
-    .hero__first-part__card__heading{
+    .hero__card__heading{
         font-size: 2.5rem;
     }
 }

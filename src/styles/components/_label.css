@@ -10,6 +10,7 @@
     color: var(--primary-blue-color);
     padding: 2em 0;
     gap: 2em;
+    margin-right: 7em;
 }
 
 .label-radio:hover{
