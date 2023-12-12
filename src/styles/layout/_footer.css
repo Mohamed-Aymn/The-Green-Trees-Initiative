@@ -1,6 +1,6 @@
 .footer__content-container{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3em;
 }
 
@@ -12,6 +12,7 @@
 
 @media only screen and (max-width: 767px) {
     .footer__content-container{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
 }
