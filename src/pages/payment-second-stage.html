@@ -20,76 +20,72 @@
             <div class="green full-background">
                 <img src="../assets/photos/finalpaymentkidsbg.jpg" alt="background-img" />
             </div>
-            <div class="form">
-                <form method="get" action="./appreciation.html">
-                    <h1 class="form__head">Your information</h1>
-                    <div class="two-column-div--form input--form--hgap">
+            <form class="form" method="get" action="./appreciation.html">
+                <h1 class="form__head">Your information</h1>
+                <div class="form__multi-elements-line">
+                    <label class="form__field-header">
+                        <div>First name</div>
+                        <input class="input--form" type="text" name="firstname" placeholder="First name">
+                    </label>
+                    <label>
+                        <div class="form__field-header">Last name</div>
+                        <input class="input--form" type="text" name="lastname" placeholder="Last name">
+                    </label>
+                </div>
+                <label>
+                    <div class="form__field-header">Street</div>
+                    <input class="input--form input--form--fullwidth" type="text" name="Street" placeholder="Street address">
+                </label>
+                <div class="form__multi-elements-line">
+                    <label>
+                        <div class="form__field-header">City</div>
+                        <input class="input--form" type="text" name="city" placeholder="City name">
+                    </label>
+                    <label>
+                        <div class="form__field-header ">State</div>
+                        <select name="State" class="input--form  input--form__select--up">
+                            <option value="State1" selected>State1</option>
+                            <option value="State2">State2</option>
+                            <option value="State3">State3</option>
+                            <option value="State4">State4</option>
+                        </select>
+                    </label>
+                    <label>
+                        <div class="form__field-header">Zip code</div>
+                        <input class="input--form" type="text" name="zip" placeholder="Zip code">
+                    </label>
+                </div>
+                <label>
+                    <div class="form__field-header">Email Address</div>
+                    <input class="input--form input--form--fullwidth" type="text" name="Email" placeholder="Email address">
+                </label>
+                <h1 class="form__head">Payment information</h1>
+                <label>
+                    <div class="form__field-header">Credit card number</div>
+                    <input class="input--form input--form--fullwidth" type="text" name=CCN placeholder="Credit card number">
+                </label>
+                <div class="form__multi-elements-line">
+                    <div class="form__multi-elements-line">
                         <div>
-                            <h1 class="form__field-header">First name</h1>
-                            <input class="input--form" type="text" name="firstname" placeholder="First name">
+                            <h1 class="form__field-header ">EXPRATION</h1>
+                            <input class="input--form input--form--smallwidth" type="text" name="expmonth" placeholder="MM">
                         </div>
                         <div>
-                            <h1 class="form__field-header">Last name</h1>
-                            <input class="input--form" type="text" name="lastname" placeholder="Last name">
+                            <h1 class="form__field-header ">&nbsp</h1>
+                            <input class="input--form input--form--smallwidth" type="text" name="expyear" placeholder="YYYY">
                         </div>
                     </div>
                     <div>
-                        <h1 class="form__field-header">Street</h1>
-                        <input class="input--form input--form--fullwidth" type="text" name="Street" placeholder="Street address">
+                        <h1 class="form__field-header ">SECURITY CODE</h1>
+                        <input class="input--form input--form--smallwidth" type="text" name="expiration" placeholder="MM">
                     </div>
-                    <div class="two-column-div--form">
-                        <div>
-                            <h1 class="form__field-header">City</h1>
-                            <input class="input--form" type="text" name="city" placeholder="City name">
-                        </div>
-                        <div class="two-column-div--form">
-                            <div>
-                                <h1 class="form__field-header input--form__select">State</h1>
-                                <select name="State" class="input--form input--form__select input--form__select--up">
-                                    <option value="State1" selected>State1</option>
-                                    <option value="State2">State2</option>
-                                    <option value="State3">State3</option>
-                                    <option value="State4">State4</option>
-                                </select>
-                            </div>
-                            <div>
-                                <h1 class="form__field-header">Zip code</h1>
-                                <input class="input--form input--form--smallwidth" type="text" name="zip" placeholder="Zip code">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="form__field-header">Email Address</h1>
-                        <input class="input--form input--form--fullwidth" type="text" name="Email" placeholder="Email address">
-                    </div>
-                    <h1 class="form__head">Payment information</h1>
-                    <div>
-                        <h1 class="form__field-header">Credit card number</h1>
-                        <input class="input--form input--form--fullwidth" type="text" name=CCN placeholder="Credit card number">
-                    </div>
-                    <div class="two-column-div--form">
-                        <div class="two-column-div--form">
-                            <div>
-                                <h1 class="form__field-header ">EXPRATION</h1>
-                                <input class="input--form input--form--smallwidth" type="text" name="expmonth" placeholder="MM">
-                            </div>
-                            <div>
-                                <h1 class="form__field-header ">&nbsp</h1>
-                                <input class="input--form input--form--smallwidth" type="text" name="expyear" placeholder="YYYY">
-                            </div>
-                        </div>
-                        <div>
-                            <h1 class="form__field-header ">SECURITY CODE</h1>
-                            <input class="input--form input--form--smallwidth" type="text" name="expiration" placeholder="MM">
-                        </div>
-                    </div>
-                    <h1 class="form__head form__head--margintop">Click the button to confirm your<br>donation of $10, recurring monthley</h1>
-                    <div class="form__submission-span">
-                        <a href="./payment.html" class="a--green">Cancel</a>
-                        <input type="submit" class="form__submission-button" value="Go to checkout">
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="form__head form__head--margintop">Click the button to confirm your<br>donation of $10, recurring monthley</div>
+                <div class="form__submission-span">
+                    <a href="./payment.html" class="a--green">Cancel</a>
+                    <input type="submit" class="form__submission-button" value="Go to checkout">
+                </div>
+            </form>
             <p class="stylized-text stylized-text--large">
                 GIVE HOPE<br>TO THOSE<br>WHO NEED<br>IT MOST
             </p>
