@@ -4,6 +4,7 @@ button{
     width: fit-content;
     border: none;
     border-radius: 2em;
+    cursor: pointer;
 }
 
 /* submmit */
