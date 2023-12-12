@@ -24,55 +24,55 @@
             <div class="form">
                 <form method="get" action="./payment-second-stage.html">
                     <!-----------------------Start of price selection------------------------>
+                    <h1 class="h1--white--large">Choose a donation amount</h1>
                     <div>
-                        <h1 class="h1--white--large">Choose a donation amount</h1>
-                        <div class="radio-option">
-                            <input type="radio" name="donation-amount" value="10">
-                            <p class="radio-option__amount">
+                        <input id="donation-amount-1" type="radio" name="donation-amount" value="10">
+                        <label class="label-radio" for="donation-amount-1">
+                            <p class="label-radio__title label-radio__title--large">
                                 $10
                             </p>
-                            <p class="radio-option__paragraph">
+                            <p class="label-radio__paragraph">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod.
                             </p>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" name="donation-amount" value="50">
-                            <p class="radio-option__amount">
+                        </label>
+                        <input id="donation-amount-2" type="radio" name="donation-amount" value="50">
+                        <label class="label-radio" for="donation-amount-2">
+                            <p class="label-radio__title label-radio__title--large">
                                 $25
                             </p>
-                            <p class="radio-option__paragraph">
+                            <p class="label-radio__paragraph">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod.
                             </p>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" name="donation-amount" value="50">
-                            <p class="radio-option__amount">
+                        </label>
+                        <input id="donation-amount-3" type="radio" name="donation-amount" value="50">
+                        <label class="label-radio" for="donation-amount-3">
+                            <p class="label-radio__title label-radio__title--large">
                                 $50
                             </p>
-                            <p class="radio-option__paragraph">
+                            <p class="label-radio__paragraph">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod.
                             </p>
-                        </div>
-                        <div class="form__custom-amount">
-                            <a href="" class="a--green">Enter a custom donation amount</a>  
-                        </div> 
+                        </label>
                     </div>
+                    <div class="form__custom-amount">
+                        <a href="" class="a--green">Enter a custom donation amount</a>  
+                    </div> 
                     <!-----------------------End of price selection------------------------->
         
                     <!-----------------------Start of frequency selection------------------->
                     <h1 class="h1--white--large">Choose a donation frequency</h1>
                     <div class="form__frequency-selection">
-                        <div class="radio-option">
-                            <input type="radio" name="donation-frequency" value="monthly">
-                            <p class="radio-option__frequency">Monthly</p>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" name="donation-frequency" value="onetime">
-                            <p class="radio-option__frequency">One time</p>
-                        </div>
+                        <input id="donation-frequency-1" type="radio" name="donation-frequency" value="monthly">
+                        <label class="label-radio" for="donation-frequency-1">
+                            <p class="label-radio__title">Monthly</p>
+                        </label>
+                        <input id="donation-frequency-2" type="radio" name="donation-frequency" value="onetime">
+                        <label class="label-radio" for="donation-frequency-2">
+                            <p class="label-radio__title">One time</p>
+                        </label>
                     </div>
                     <!-----------------------End of frequency selection--------------------->
                     <div class="form__submission-span">
