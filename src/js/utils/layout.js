@@ -1,6 +1,6 @@
 const navbar = () => {
 
-}
+};
 
 const footer = () => {
 

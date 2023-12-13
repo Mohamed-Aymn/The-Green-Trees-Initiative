@@ -1,7 +1,3 @@
-// import Handlebars from "handlebars";
-// import Handlebars from "../libs/handlebars.min.js";
-
-
 const state = {
     title: "rocks!"
 }
@@ -11,9 +7,14 @@ const fetchState = () => {
 }
 
 const displayState = () => {
-    const app = document.getElementById("app")
-    const template = Handlebars.compile(app.innerHTML)
-    app.innerHTML = template(state)
+    const appElement = document.getElementById("app");
+    const appHtml = appElement.innerHTML;
+
+    const updatedHtml = appHtml.replace(/{{(.*?)}}/g, (match, key) => {
+        return state[key.trim()] || match;
+    });
+
+    appElement.innerHTML = updatedHtml;
 }
 
 export const loadState = () => {
