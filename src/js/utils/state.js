@@ -1,20 +1,23 @@
 const state = {
-    title: "rocks!"
+    // example: title: "rocks!"
 }
 
 const fetchState = () => {
-
+    for (let key in sessionStorage) {
+        if (sessionStorage.hasOwnProperty(key)) {
+            state[key] = sessionStorage.getItem(key);
+        }
+    }
 }
 
 const displayState = () => {
-    const appElement = document.getElementById("app");
-    const appHtml = appElement.innerHTML;
+    const appHtml = document.body.innerHTML;
 
     const updatedHtml = appHtml.replace(/{{(.*?)}}/g, (match, key) => {
         return state[key.trim()] || match;
     });
 
-    appElement.innerHTML = updatedHtml;
+    document.body.innerHTML = updatedHtml;
 }
 
 export const loadState = () => {
@@ -24,4 +27,7 @@ export const loadState = () => {
 
 export const setState = (item, value) => {
     state[`${item}`] = value;
+    sessionStorage.setItem('key', 'value');
+    // refresh the UI after updating state
+    displayState();
 }
