@@ -1,3 +1,3 @@
-export function init() {
+export function home() {
 
 }
