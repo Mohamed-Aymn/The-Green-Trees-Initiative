@@ -25,9 +25,9 @@ export const loadState = () => {
     displayState()
 }
 
-export const setState = (item, value) => {
-    state[`${item}`] = value;
-    sessionStorage.setItem('key', 'value');
+export const setState = (key, value) => {
+    state[`${key}`] = value;
+    sessionStorage.setItem(key, value);
     // refresh the UI after updating state
     displayState();
 }
