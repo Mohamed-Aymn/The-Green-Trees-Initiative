@@ -1,4 +1,10 @@
+const state = {
+    title: "rocks!"
+}
+
 export function init() {
-    console.log('page initialized.');
-    // Add home page-specific logic here
+    // template engine
+    const app = document.getElementById("app")
+    const template = Handlebars.compile(app.innerHTML)
+    app.innerHTML = template(state)
 }

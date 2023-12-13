@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Very Green</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
-<body>
+<body id="app">
     <nav class="navbar">
         <a href="index.html" class="navbar__links-container__logo"><span class="navbar__logo">The Green<br>Trees Initiative</span></a>
         <ul class="navbar__links-container">
@@ -31,6 +32,8 @@
                 </div>
                 <div class="stylized-text stylized-text--large">
                     #STOP<br>CLIMATE<br>CHANGE
+                    <div>{{title}}</div>
+                    <div>{{count}}</div>
                 </div>
         </section>
 
