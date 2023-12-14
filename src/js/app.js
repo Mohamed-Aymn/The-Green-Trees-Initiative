@@ -1,3 +1,5 @@
+import "../styles/main.css";
+
 document.addEventListener('DOMContentLoaded', function () {
     // common functionalities accross all pages
     import('./utils/common.js').then((module) => module.common());
