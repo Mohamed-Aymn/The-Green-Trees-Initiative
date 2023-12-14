@@ -1,8 +1,6 @@
-import { layout } from "./layout.js";
-import { loadState } from "./state.js";
-
-// functions in this common function are triggered once on page load
+import { layout } from './layout.js'
+import { loadState } from './state.js'
 export const common = () => {
-    layout();
-    loadState();
+    layout()
+    loadState()
 }
