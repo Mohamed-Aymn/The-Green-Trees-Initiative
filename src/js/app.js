@@ -1,8 +1,6 @@
-import { common } from "./utils/common.js";
-
 document.addEventListener('DOMContentLoaded', function () {
     // common functionalities accross all pages
-    common();
+    import('./utils/common.js').then((module) => module.common());
 
     // js logic for specific pages
     const currentPage = window.location.pathname;

@@ -17,6 +17,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "gulp-include": "^2.4.1",
+    "gulp-js-import": "^1.0.6",
     "gulp-sourcemaps": "^3.0.0"
   }
 }

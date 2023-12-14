@@ -8,9 +8,9 @@ const bundleJs = () => {
     return src('./js/**/*.js')
         .pipe(sourceMaps.init())
         .pipe(minifyJs())
-        .pipe(concat('bundle.min.js'))
+        // .pipe(concat('bundle.min.js')) //  fix modules issue
         .pipe(sourceMaps.write())
-        .pipe(dest('../dist'))
+        .pipe(dest('../dist/js'))
 }
 
 const bundleCss = () => {
@@ -19,7 +19,7 @@ const bundleCss = () => {
         .pipe(minifyCss())
         .pipe(concat('styles.min.css'))
         .pipe(sourceMaps.write())
-        .pipe(dest('../dist'));
+        .pipe(dest('../dist/css'));
 };
 
 const devWatch = () => {
