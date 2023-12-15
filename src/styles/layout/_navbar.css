@@ -34,8 +34,8 @@
 
 .navbar__mobile-close-icon-conatiner__icon-conatiner{
     position: absolute;
-    right: 2em;
-    top: 2em;
+    right: var(--md-space);
+    top: 1em;
 }
 
 .navbar__mobile-display__items{
