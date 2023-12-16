@@ -53,14 +53,14 @@
 }
 
 #navbar__mobile-display{
-    display: none;
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 0;
     height: 100vh;
     width: 70%;
     background-color: white;
     z-index: 100;
+    transition: 0.5s;
 }
 
 .navbar__links-container__link:hover{
@@ -77,14 +77,15 @@
 }
 
 #navbar__overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
-    z-index: 99; 
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
+    transition: 1s;
 }
 
 @media only screen and (max-width: 767px) {
