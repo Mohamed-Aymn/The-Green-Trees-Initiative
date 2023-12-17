@@ -3,6 +3,10 @@ const navbar = async () => {
     const indexPage = currentPage.includes("index")
 
     const HTML = `
+
+        <!-- modern scroll watch to optimize preformance -->
+        <div style="display: none;" onscroll="document.getElementById('navbar').style.top = -100%"></div>
+
         <a href="${indexPage ? "" : "../"}index.html" class="navbar__links-container__logo"><span class="navbar__logo">The Green<br>Trees Initiative</span></a>
         <ul class="navbar__links-container">
             <li><a href="https://github.com/gigachadteam/Very-Green-WebProject" class="navbar__links-container__link">Github</a></li>
@@ -12,6 +16,7 @@ const navbar = async () => {
         <div id="navbar__mobile-icon" class="navbar__icon-container">
             <img src="${indexPage ? "../" : "../../"}assets/photos/nav-icon.svg" alt="nav-icon" />
         </div>
+        <div id="navbar__overlay"></div>
         <div id="navbar__mobile-display">
             <div class="navbar__mobile-close-icon-conatiner__icon-conatiner">
                 <img id="navbar__mobile-close-icon-conatiner__icon" src="${indexPage ? "../" : "../../"}assets/photos/close-icon.svg" alt="close-icon" />
@@ -25,13 +30,11 @@ const navbar = async () => {
     `;
 
     const tempContainer = document.createElement('nav');
+    tempContainer.setAttribute("id", "navbar");
     tempContainer.innerHTML = HTML;
     tempContainer.classList.add("navbar");
-    const overlayDiv = document.createElement('div');
-    overlayDiv.id = 'navbar__overlay';
 
     await document.body.prepend(tempContainer);
-    await document.body.prepend(overlayDiv);
 
     const navbarIcon = document.getElementById("navbar__mobile-icon");
     const navbarBody = document.getElementById("navbar__mobile-display");
@@ -39,14 +42,35 @@ const navbar = async () => {
     const overlay = document.getElementById("navbar__overlay");
 
     navbarIcon.addEventListener("click", () => {
-        navbarBody.style.display = "block";
-        overlay.style.display = "block";
+        navbarBody.style.right = "0";
+        overlay.style.zIndex = "11";
+        overlay.style.opacity = "1";
     });
 
     navbarCloseIcon.addEventListener("click", () => {
-        navbarBody.style.display = "none";
-        overlay.style.display = "none";
+        navbarBody.style.right = "-100%";
+        overlay.style.zIndex = "-1";
+        overlay.style.opacity = "0";
     });
+
+
+    const navbarElement = document.querySelector(".navbar");
+    let prevScrollPos = window.pageYOffset;
+
+    window.addEventListener("scroll", () => {
+        const currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+            // Scrolling up, show navbar
+            navbarElement.style.transform = "translateY(0)";
+        } else {
+            // Scrolling down, hide navbar
+            navbarElement.style.transform = `translateY(-${navbarElement.offsetHeight}px)`;
+        }
+
+        prevScrollPos = currentScrollPos;
+    });
+
 };
 
 const footer = () => {
