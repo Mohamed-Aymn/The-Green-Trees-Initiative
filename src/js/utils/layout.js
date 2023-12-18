@@ -12,7 +12,6 @@ const navbar = async () => {
         <div id="navbar__mobile-icon" class="navbar__icon-container">
             <img src="${indexPage ? "../" : "../../"}assets/photos/nav-icon.svg" alt="nav-icon" />
         </div>
-        <div id="navbar__overlay"></div>
         <div id="navbar__mobile-display">
             <div class="navbar__mobile-close-icon-conatiner__icon-conatiner">
                 <img id="navbar__mobile-close-icon-conatiner__icon" src="${indexPage ? "../" : "../../"}assets/photos/close-icon.svg" alt="close-icon" />
@@ -34,18 +33,17 @@ const navbar = async () => {
     const navbarIcon = document.getElementById("navbar__mobile-icon");
     const navbarBody = document.getElementById("navbar__mobile-display");
     const navbarCloseIcon = document.getElementById("navbar__mobile-close-icon-conatiner__icon");
-    const overlay = document.getElementById("navbar__overlay");
 
     navbarIcon.addEventListener("click", () => {
         navbarBody.style.right = "0";
-        overlay.style.zIndex = "11";
-        overlay.style.opacity = "1";
+        // overlay.style.zIndex = "11";
+        // overlay.style.opacity = "1";
     });
 
     navbarCloseIcon.addEventListener("click", () => {
         navbarBody.style.right = "-100%";
-        overlay.style.zIndex = "-1";
-        overlay.style.opacity = "0";
+        // overlay.style.zIndex = "-1";
+        // overlay.style.opacity = "0";
     });
 
 
