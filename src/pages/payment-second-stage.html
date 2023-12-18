@@ -9,7 +9,8 @@
 </head>
 <body>
 
-    <main class="payment-second-stage">
+    <main>
+        <section class="payment-second-stage">
             <div class="green full-background">
                 <img src="../../assets/photos/finalpaymentkidsbg.jpg" alt="background-img" />
             </div>
@@ -58,20 +59,17 @@
                     <input class="input--form input--form--fullwidth" type="text" name=CCN placeholder="Credit card number">
                 </label>
                 <div class="form__multi-elements-line">
-                    <div class="form__multi-elements-line">
-                        <div>
-                            <h1 class="form__field-header ">EXPRATION</h1>
+                    <label>
+                        <h1 class="form__field-header ">EXPRATION DATE</h1>
+                        <div class="form__multi-elements-line">
                             <input class="input--form input--form--smallwidth" type="text" name="expmonth" placeholder="MM">
-                        </div>
-                        <div>
-                            <h1 class="form__field-header ">&nbsp</h1>
                             <input class="input--form input--form--smallwidth" type="text" name="expyear" placeholder="YYYY">
                         </div>
-                    </div>
-                    <div>
+                    </label>
+                    <label>
                         <h1 class="form__field-header ">SECURITY CODE</h1>
                         <input class="input--form input--form--smallwidth" type="text" name="expiration" placeholder="MM">
-                    </div>
+                    </label>
                 </div>
                 <div class="form__head form__head--margintop">Click the button to confirm your<br>donation of $10, recurring monthley</div>
                 <div class="form__submission-span">
@@ -82,6 +80,7 @@
             <p class="stylized-text stylized-text--large">
                 GIVE HOPE<br>TO THOSE<br>WHO NEED<br>IT MOST
             </p>
+        </section>
     </main>
 
     <script type="module" src="../../dist/js/bundle.min.js"></script>

@@ -36,18 +36,11 @@
 
 .form__field-header{
     color: white;
-    font-weight: 100;
-    font-size: 120%;
-    /* margin-bottom: -3px; */
 }
 
 .form__head{
     color: white;
     font-size: 150%;
-}
-
-.form__head--margintop{
-    /* margin-top: 30px; */
 }
 
 .form__submit-button{
