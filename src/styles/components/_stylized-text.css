@@ -16,3 +16,9 @@
 .stylized-text--blue{
     color: var(--primary-blue-color);
 }
+
+@media only screen and (max-width: 767px) {
+    .stylized-text--large{
+        font-size: 3.7rem;
+    }
+}

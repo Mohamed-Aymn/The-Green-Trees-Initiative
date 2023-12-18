@@ -15,6 +15,7 @@ body {
 main{
     margin: 0;
     padding: 0;
+    padding-top: var(--md-space);
     border: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -52,5 +53,9 @@ section{
     footer{
         display: flex;
         flex-direction: column;
+    }
+
+    section{
+        padding: var(--sm-space);
     }
 }

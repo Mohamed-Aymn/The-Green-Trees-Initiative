@@ -30,3 +30,9 @@
     color: white;
     font-size:300%;
 }
+
+@media only screen and (max-width: 767px) {
+    .h1--large{
+        font-size: 2.1rem;
+    }
+}

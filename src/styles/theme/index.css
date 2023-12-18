@@ -10,5 +10,7 @@
     --primary-blue-color: #354463;
 
     /* spacing */
+    --lg-space: 7em;
     --md-space: 5em;
+    --sm-space: 2.5em;
 }

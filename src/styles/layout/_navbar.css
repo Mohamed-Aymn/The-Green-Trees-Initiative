@@ -7,6 +7,7 @@
     top: 0;
     width: 100%;
     transition: 0.5s;
+    height: 5em;
 }
 
 .navbar__logo{
@@ -93,6 +94,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .navbar{
+        padding-right: var(--sm-space);
+        padding-left: var(--sm-space);
+    }
+
     .navbar__links-container{
         gap: 0.2em;
     }
@@ -104,4 +110,5 @@
     .navbar__links-container{
         display: none;
     }
+
 }
