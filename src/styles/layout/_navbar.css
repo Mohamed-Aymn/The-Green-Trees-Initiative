@@ -11,6 +11,7 @@
 }
 
 .navbar__logo{
+    text-decoration: none;
     font-weight: bolder;
     color: var(--primary-blue-color);
 }
@@ -26,7 +27,6 @@
 }
 
 .navbar__links-container__logo{
-    padding: 0.5em 1em;
     color: grey;
     text-decoration: none;
 }

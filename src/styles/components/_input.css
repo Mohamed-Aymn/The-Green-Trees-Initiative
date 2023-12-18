@@ -23,10 +23,6 @@
     width: 100%;
 }
 
-/* .input--form__select--up{
-    margin-top: -1px;
-} */
-
 .input--form::placeholder{
     color: gray;
     font-size: 120%;

@@ -3,7 +3,7 @@ const navbar = async () => {
     const indexPage = currentPage.includes("index")
 
     const HTML = `
-        <a href="${indexPage ? "" : "../"}index.html" class="navbar__links-container__logo"><span class="navbar__logo">The Green<br>Trees Initiative</span></a>
+        <a href="${indexPage ? "" : "../"}index.html" class="navbar__logo">The Green<br>Trees Initiative</a>
         <ul class="navbar__links-container">
             <li><a href="https://github.com/gigachadteam/Very-Green-WebProject" class="navbar__links-container__link">Github</a></li>
             <li><a href="${indexPage ? "./pages/" : ""}about-us.html" class="navbar__links-container__link">About us</a></li>
