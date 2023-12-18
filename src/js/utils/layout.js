@@ -36,14 +36,10 @@ const navbar = async () => {
 
     navbarIcon.addEventListener("click", () => {
         navbarBody.style.right = "0";
-        // overlay.style.zIndex = "11";
-        // overlay.style.opacity = "1";
     });
 
     navbarCloseIcon.addEventListener("click", () => {
         navbarBody.style.right = "-100%";
-        // overlay.style.zIndex = "-1";
-        // overlay.style.opacity = "0";
     });
 
 

@@ -5,9 +5,14 @@
     padding-left: var(--md-space);
     position: fixed;
     top: 0;
+    left: 50%;
+    translate: -50% 0;
     width: 100%;
     transition: 0.5s;
     height: 5em;
+    max-width: var(--max-page-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar__logo{
@@ -58,6 +63,7 @@
 }
 
 #navbar__mobile-display{
+    display: none;
     position: absolute;
     right: -100%;
     top: 0;
@@ -82,6 +88,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    #navbar__mobile-display{
+        display: block;
+    }
+
     .navbar{
         padding-right: var(--sm-space);
         padding-left: var(--sm-space);

@@ -37,6 +37,10 @@ footer{
     max-width: 95vw;
     margin: auto;
     padding: var(--md-space);
+    max-width: var(--max-page-width);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
 }
 
 img{
@@ -46,6 +50,10 @@ img{
 }
 
 section{
+    max-width: var(--max-page-width);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
     padding: var(--md-space);
 }
 
