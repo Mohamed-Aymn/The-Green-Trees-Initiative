@@ -81,8 +81,8 @@
 }
 
 .navbar__links-container__link--primary{
-    color:  var(--primary-blue-color);
-    background-color: var(--primary-green-color);
+    color:  var(--special-text-color);
+    background-color: var(--primary-color);
     border-radius: 2em;
     font-weight: bold;
 }

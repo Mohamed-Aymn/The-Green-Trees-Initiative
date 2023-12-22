@@ -4,8 +4,5 @@
 @import url(_section.css);
 @import url(_background_layout.css);
 
-:root{
-    --max-page-width: 250ch;
-}
 
 

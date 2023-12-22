@@ -1,14 +1,14 @@
 .button--primary{
-    color: var(--primary-blue-color);
-    background-color: var(--primary-green-color);
-    border: 2px solid var(--primary-green-color);
+    color: var(--secondary-text-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     transition: 0.4s;
 }
 
 .button--secondary{
-    color: var(--primary-green-color);
-    background-color: var(--primary-blue-color);
-    border: 2px solid var(--primary-blue-color);
+    color: var(--primary-color);
+    background-color: var(--secondary-body-color);
+    border: 2px solid var(--secondary-body-color);
     transition: 0.4s;
 }
 
@@ -18,11 +18,11 @@
 
 .button--primary:hover{
     transition: 0.4s;
-    border: 2px solid var(--primary-blue-color);
+    border: 2px solid var(--secondary-body-color);
 }
 
 .button--secondary:hover{
-    border: 2px solid var(--primary-green-color);
+    border: 2px solid var(--primary-color);
     transition: 0.4s;
 }
 

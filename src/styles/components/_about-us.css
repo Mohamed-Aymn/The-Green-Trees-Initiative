@@ -15,8 +15,8 @@
 }
 
 .people-section__name-container{
-    background-color: var(--primary-blue-color);
-    color: white;
+    background-color: var(--secondary-body-color);
+    color: var(--tertiary-text-color);
     padding: 1em 2em;
     translate: 2.5% -50%;
     z-index: 5;

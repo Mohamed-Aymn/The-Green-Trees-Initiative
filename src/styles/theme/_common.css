@@ -1,0 +1,24 @@
+/* fonts */
+@font-face {
+    font-family: Balibrush;
+    src: url(../../../assets/fonts/Balibrush.otf) format("opentype");
+}
+
+:root{
+    /* spacing */
+    --lg-space: 7em;
+    --md-space: 5em;
+    --sm-space: 2.5em;
+    --max-page-width: 250ch;
+
+    /* theme colors */
+    --primary-color: #C1F7D5; /* main brand color, not variable accordin to theme */
+
+    --primary-text-color: var(--black-light-theme-color);
+    --secondary-text-color: var(--blue-light-theme-color);
+    --tertiary-text-color: var(--white-light-theme-color);
+
+    --primary-body-color: var(--white-light-theme-color);
+    --secondary-body-color: var(--blue-light-theme-color);
+    --tertiary-body-color: var(--blue-light-theme-color)
+}

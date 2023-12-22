@@ -117,7 +117,28 @@ const footer = () => {
     document.body.append(tempContainer)
 }
 
+const themeButton = async () => {
+    const HTML = `
+        <div class="float-button__content">
+            X
+        </div>
+    `
+
+    const tempContainer = document.createElement('button');
+    tempContainer.innerHTML = HTML;
+    tempContainer.classList.add("float-button");
+    tempContainer.setAttribute('id', 'toggleThemeButton');
+
+    await document.body.append(tempContainer)
+
+    const element = document.getElementById('toggleThemeButton')
+    element.addEventListener('click', () => {
+        console.log("hello")
+    })
+}
+
 export const layout = () => {
     navbar()
     footer()
+    themeButton()
 }

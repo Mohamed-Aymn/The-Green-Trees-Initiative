@@ -1,0 +1,16 @@
+.float-button{
+    position: fixed;
+    bottom: var(--md-space);
+    right: var(--md-space);
+    z-index: 100;
+    width: var(--lg-space);
+    height: var(--lg-space);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.float-button__content{
+    margin: auto 0;
+}

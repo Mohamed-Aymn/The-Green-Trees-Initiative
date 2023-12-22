@@ -8,15 +8,15 @@
 }
 
 .card--white{
-    background-color: white;
-    color: var(--primary-blue-color);
+    background-color: var(--primary-body-color);
+    color: var(--secondary-text-color);
     width: fit-content;
     /* height: fit-content; */
 }
 
 .card--green{
-    background-color: var(--primary-green-color);
-    color: var(--primary-blue-color);
+    background-color: var(--primary-color);
+    color: var(--special-text-color);
 }
 
 .card--row{
@@ -33,7 +33,7 @@
 .card__head{
     position: absolute;
     top: -1em;
-    background-color: var(--primary-blue-color);
+    background-color: var(--secondary-body-color);
     color: white;
     width: fit-content;
     padding: 0.5em;
@@ -49,7 +49,7 @@
 
 .card__head--white{
     background-color: white;
-    color: var(--primary-blue-color); 
+    color: var(--secondary-text-color); 
 }
 
 .card__head--center{
