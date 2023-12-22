@@ -131,9 +131,47 @@ const themeButton = async () => {
 
     await document.body.append(tempContainer)
 
+    var rootStyles = document.querySelector(':root');
+    const setLightTheme = () => {
+        rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
+        rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
+        rootStyles.style.setProperty('--tertiary-text-color', 'var(--white-light-theme-color)');
+        rootStyles.style.setProperty('--primary-body-color', 'var(--white-light-theme-color)');
+        rootStyles.style.setProperty('--secondary-body-color', 'var(--blue-light-theme-color)');
+        rootStyles.style.setProperty('--tertiary-body-color', 'var(--blue-light-theme-color)');
+    }
+    const setDarkTheme = () => {
+        rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
+        rootStyles.style.setProperty('--secondary-text-color', 'var(--grey-dark-theme-color)');
+        rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
+        rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
+        rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
+        rootStyles.style.setProperty('--tertiary-body-color', 'var(--grey-dark-theme-color)');
+    }
+    switch (localStorage.getItem('theme')) {
+        case "dark":
+            setDarkTheme()
+            break;
+        default:
+            setLightTheme()
+            break;
+    }
+
     const element = document.getElementById('toggleThemeButton')
     element.addEventListener('click', () => {
-        console.log("hello")
+        document.documentElement.style.transition = "0.5s";
+        switch (localStorage.getItem('theme')) {
+            case "dark":
+                setLightTheme()
+                localStorage.setItem('theme', 'light');
+                break;
+            default:
+                console.log("herllo")
+                setDarkTheme()
+                localStorage.setItem('theme', 'dark');
+                break;
+        }
+        document.documentElement.style.transition = "0";
     })
 }
 

@@ -16,7 +16,7 @@
 
 .card--green{
     background-color: var(--primary-color);
-    color: var(--special-text-color);
+    color: var(--blue-color);
 }
 
 .card--row{

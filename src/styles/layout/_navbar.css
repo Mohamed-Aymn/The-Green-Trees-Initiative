@@ -1,5 +1,5 @@
 .navbar{
-    background-color: white;
+    background-color: var(--primary-body-color);
     z-index: 10;
     padding-right: var(--md-space);
     padding-left: var(--md-space);
@@ -10,7 +10,7 @@
     width: 100%;
     transition: 0.5s;
     height: 5em;
-    max-width: var(--max-page-width);
+    max-width: calc( var(--max-page-width) + (2 * var(--md-space)));
     margin-left: auto;
     margin-right: auto;
 }
@@ -81,7 +81,7 @@
 }
 
 .navbar__links-container__link--primary{
-    color:  var(--special-text-color);
+    color:  var(--blue-color);
     background-color: var(--primary-color);
     border-radius: 2em;
     font-weight: bold;
