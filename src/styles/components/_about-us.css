@@ -1,40 +1,39 @@
-.text-section{
+.text-section {
     display: flex;
     justify-content: space-between;
+    gap: var(--sm-space);
 }
 
-.text-section__text{
+.text-section__text {
     font-size: 2rem;
 }
 
-.people-section{
+.people-section {
     display: grid;
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 3em 2em; 
+    gap: 3em 2em;
 }
 
-.people-section__name-container{
+.people-section__name-container {
     background-color: var(--secondary-body-color);
-    color: var(--tertiary-text-color);
+    color: var(--white-color);
     padding: 1em 2em;
     translate: 2.5% -50%;
     z-index: 5;
 }
 
-.people-section__img-container{
+.people-section__img-container {
     z-index: -1;
 }
 
 @media only screen and (max-width: 767px) {
-    .people-section{
+    .people-section {
         grid-template-rows: repeat(auto, 1fr);
         grid-template-columns: 1fr;
     }
 
-    .text-section{
+    .text-section {
         flex-direction: column;
     }
 }
-
-

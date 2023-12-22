@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/photos/favicon.ico">
     <link rel="stylesheet" href="../../dist/css/bundle.min.css">
 </head>
+
 <body>
 
     <main>
@@ -50,8 +52,8 @@
                     </label>
                 </div>
                 <div class="form__custom-amount">
-                    <a href="" class="a--green">Enter a custom donation amount</a>  
-                </div> 
+                    <a href="" class="a--green">Enter a custom donation amount</a>
+                </div>
                 <!-----------------------End of price selection------------------------->
 
                 <!-----------------------Start of frequency selection------------------->
@@ -74,10 +76,40 @@
                     </button>
                 </div>
             </form>
-            <p class="stylized-text stylized-text--large">
+            <p class="stylized-text stylized-text--large stylized-text--white">
                 WE CAN SAVE<br>THE FUTURE
             </p>
         </section>
     </main>
+
+    <!-- theme detection -->
+    <script>
+        var rootStyles = document.querySelector(':root');
+        const setLightTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--blue-light-theme-color)');
+        }
+        const setDarkTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--l-grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--black-dark-theme-color)');
+        }
+        switch (localStorage.getItem('theme')) {
+            case "dark":
+                setDarkTheme()
+                break;
+            default:
+                setLightTheme()
+                break;
+        }
+    </script>
+
     <script type="module" src="../../dist/js/bundle.min.js"></script>
 </body>

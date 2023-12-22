@@ -142,11 +142,11 @@ const themeButton = async () => {
     }
     const setDarkTheme = () => {
         rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
-        rootStyles.style.setProperty('--secondary-text-color', 'var(--grey-dark-theme-color)');
+        rootStyles.style.setProperty('--secondary-text-color', 'var(--l-grey-dark-theme-color)');
         rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
         rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
         rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
-        rootStyles.style.setProperty('--tertiary-body-color', 'var(--grey-dark-theme-color)');
+        rootStyles.style.setProperty('--tertiary-body-color', 'var(--black-dark-theme-color)');
     }
     switch (localStorage.getItem('theme')) {
         case "dark":
@@ -159,19 +159,18 @@ const themeButton = async () => {
 
     const element = document.getElementById('toggleThemeButton')
     element.addEventListener('click', () => {
-        document.documentElement.style.transition = "0.5s";
+        document.body.style.transition = "0.5s";
         switch (localStorage.getItem('theme')) {
             case "dark":
                 setLightTheme()
                 localStorage.setItem('theme', 'light');
                 break;
             default:
-                console.log("herllo")
                 setDarkTheme()
                 localStorage.setItem('theme', 'dark');
                 break;
         }
-        document.documentElement.style.transition = "0";
+        document.body.style.transition = "0";
     })
 }
 

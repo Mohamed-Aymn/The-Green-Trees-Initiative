@@ -1,4 +1,4 @@
-.hero{
+.hero {
     width: 100wh;
     min-height: 100vh;
     position: relative;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.hero::after{
+.hero::after {
     content: "";
     position: asbsolute;
     z-index: -1;
@@ -22,34 +22,33 @@
 }
 
 
-.hero__card{
+.hero__card {
     max-width: 50%;
-    background-color: red;
 }
 
-.hero__img{
+.hero__img {
     position: absolute;
     z-index: -1;
     height: 100%;
     width: 100%;
 }
 
-.hero__card__heading{
+.hero__card__heading {
     font-size: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
-    .hero{
+    .hero {
         flex-direction: column;
         padding: 0 var(--sm-space);
     }
 
-    .hero__card{
+    .hero__card {
         max-width: 100%;
         margin-top: 5em;
     }
 
-    .hero__card__heading{
+    .hero__card__heading {
         font-size: 2rem;
     }
 }

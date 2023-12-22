@@ -1,39 +1,39 @@
-.button--primary{
-    color: var(--secondary-text-color);
+.button--primary {
+    color: var(--black-color);
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     transition: 0.4s;
 }
 
-.button--secondary{
+.button--secondary {
     color: var(--primary-color);
     background-color: var(--secondary-body-color);
     border: 2px solid var(--secondary-body-color);
     transition: 0.4s;
 }
 
-.button--full-width{
+.button--full-width {
     width: 100%;
 }
 
-.button--primary:hover{
+.button--primary:hover {
     transition: 0.4s;
     border: 2px solid var(--secondary-body-color);
 }
 
-.button--secondary:hover{
+.button--secondary:hover {
     border: 2px solid var(--primary-color);
     transition: 0.4s;
 }
 
-.button--primary--fixed-size{
+.button--primary--fixed-size {
     width: 100%;
 }
 
-.button--primary--bottom-margin{
+.button--primary--bottom-margin {
     margin-bottom: 5%;
 }
 
-.button--primary--left-margin{
+.button--primary--left-margin {
     margin-left: 6%;
 }

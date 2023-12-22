@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/photos/favicon.ico">
     <link rel="stylesheet" href="../../dist/css/bundle.min.css">
 </head>
+
 <body>
 
     <main>
@@ -28,7 +30,8 @@
                 </div>
                 <label>
                     <div class="form__field-header">Street</div>
-                    <input class="input--form input--form--fullwidth" type="text" name="Street" placeholder="Street address">
+                    <input class="input--form input--form--fullwidth" type="text" name="Street"
+                        placeholder="Street address">
                 </label>
                 <div class="form__multi-elements-line">
                     <label>
@@ -51,30 +54,38 @@
                 </div>
                 <label>
                     <div class="form__field-header">Email Address</div>
-                    <input class="input--form input--form--fullwidth" type="text" name="Email" placeholder="Email address">
+                    <input class="input--form input--form--fullwidth" type="text" name="Email"
+                        placeholder="Email address">
                 </label>
                 <h1 class="form__head">Payment information</h1>
                 <label>
                     <div class="form__field-header">Credit card number</div>
-                    <input class="input--form input--form--fullwidth" type="text" name=CCN placeholder="Credit card number">
+                    <input class="input--form input--form--fullwidth" type="text" name=CCN
+                        placeholder="Credit card number">
                 </label>
                 <div class="form__multi-elements-line">
                     <label>
                         <h1 class="form__field-header ">EXPRATION DATE</h1>
                         <div class="form__multi-elements-line">
-                            <input class="input--form input--form--smallwidth" type="text" name="expmonth" placeholder="MM">
-                            <input class="input--form input--form--smallwidth" type="text" name="expyear" placeholder="YYYY">
+                            <input class="input--form input--form--smallwidth" type="text" name="expmonth"
+                                placeholder="MM">
+                            <input class="input--form input--form--smallwidth" type="text" name="expyear"
+                                placeholder="YYYY">
                         </div>
                     </label>
                     <label>
                         <h1 class="form__field-header ">SECURITY CODE</h1>
-                        <input class="input--form input--form--smallwidth" type="text" name="expiration" placeholder="MM">
+                        <input class="input--form input--form--smallwidth" type="text" name="expiration"
+                            placeholder="MM">
                     </label>
                 </div>
-                <div class="form__head form__head--margintop">Click the button to confirm your<br>donation of $10, recurring monthley</div>
+                <div class="form__head form__head--margintop">Click the button to confirm your<br>donation of $10,
+                    recurring monthley</div>
                 <div class="form__submission-span">
                     <a href="./payment.html" class="a--green">Cancel</a>
-                    <input type="submit" class="form__submission-button" value="Go to checkout">
+                    <button type="submit" class="button--primary">
+                        Go to checkout
+                    </button>
                 </div>
             </form>
             <p class="stylized-text stylized-text--large">
@@ -83,6 +94,36 @@
         </section>
     </main>
 
+    <!-- theme detection -->
+    <script>
+        var rootStyles = document.querySelector(':root');
+        const setLightTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--blue-light-theme-color)');
+        }
+        const setDarkTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--l-grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--black-dark-theme-color)');
+        }
+        switch (localStorage.getItem('theme')) {
+            case "dark":
+                setDarkTheme()
+                break;
+            default:
+                setLightTheme()
+                break;
+        }
+    </script>
+
     <script type="module" src="../../dist/js/bundle.min.js"></script>
 </body>
+
 </html>
