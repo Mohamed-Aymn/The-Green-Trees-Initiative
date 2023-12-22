@@ -1,6 +1,6 @@
 const navbar = async () => {
     const currentPage = window.location.pathname;
-    const indexPage = currentPage.includes("index")
+    const indexPage = currentPage.includes("index");
 
     const HTML = `
         <a href="${indexPage ? "" : "../"}index.html" class="navbar__logo">The Green<br>Trees Initiative</a>
@@ -10,12 +10,10 @@ const navbar = async () => {
             <li><a href="${indexPage ? "./pages/" : ""}payment-first-stage.html" class="navbar__links-container__link navbar__links-container__link--primary">Donate now</a></li>
         </ul>
         <div id="navbar__mobile-icon" class="navbar__icon-container">
-            <img src="${indexPage ? "../" : "../../"}assets/photos/nav-icon.svg" alt="nav-icon" />
+            <i class="fa-solid fa-bars"></i>
         </div>
         <div id="navbar__mobile-display">
-            <div class="navbar__mobile-close-icon-conatiner__icon-conatiner">
-                <img id="navbar__mobile-close-icon-conatiner__icon" src="${indexPage ? "../" : "../../"}assets/photos/close-icon.svg" alt="close-icon" />
-            </div>
+            <i id="navbar__mobile-close-icon-conatiner__icon" class="fa-solid fa-x"></i>
             <ul class="navbar__mobile-display__items">
                 <li><a href="https://github.com/gigachadteam/Very-Green-WebProject" class="navbar__links-container__link">Github</a></li>
                 <li><a href="${indexPage ? "./pages/" : ""}about-us.html" class="navbar__links-container__link">About us</a></li>
@@ -118,20 +116,8 @@ const footer = () => {
 }
 
 const themeButton = async () => {
-    const HTML = `
-        <div class="float-button__content">
-            X
-        </div>
-    `
-
-    const tempContainer = document.createElement('button');
-    tempContainer.innerHTML = HTML;
-    tempContainer.classList.add("float-button");
-    tempContainer.setAttribute('id', 'toggleThemeButton');
-
-    await document.body.append(tempContainer)
-
     var rootStyles = document.querySelector(':root');
+    var themeIcon;
     const setLightTheme = () => {
         rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
         rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
@@ -151,23 +137,42 @@ const themeButton = async () => {
     switch (localStorage.getItem('theme')) {
         case "dark":
             setDarkTheme()
+            themeIcon = `<i class="fa-solid fa-sun"></i>`
             break;
         default:
             setLightTheme()
+            themeIcon = `<i class="fa-solid fa-moon"></i>`
             break;
     }
 
+
+    const HTML = `
+        <div id="theme-icon" class="float-button__content">
+            ${themeIcon}
+        </div>
+    `
+
+    const tempContainer = document.createElement('button');
+    tempContainer.innerHTML = HTML;
+    tempContainer.classList.add("float-button");
+    tempContainer.setAttribute('id', 'toggleThemeButton');
+
+    await document.body.append(tempContainer)
+
     const element = document.getElementById('toggleThemeButton')
+    const themeIconHtmlElement = document.getElementById('theme-icon')
     element.addEventListener('click', () => {
         document.body.style.transition = "0.5s";
         switch (localStorage.getItem('theme')) {
             case "dark":
                 setLightTheme()
                 localStorage.setItem('theme', 'light');
+                themeIconHtmlElement.innerHTML = `<i class="fa-solid fa-moon"></i>`
                 break;
             default:
                 setDarkTheme()
                 localStorage.setItem('theme', 'dark');
+                themeIconHtmlElement.innerHTML = `<i class="fa-solid fa-sun"></i>`
                 break;
         }
         document.body.style.transition = "0";
