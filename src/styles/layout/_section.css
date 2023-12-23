@@ -1,16 +1,16 @@
-.section--blue{
-    background-color: var(--primary-blue-color);
+.section--blue {
+    background-color: var(--tertiary-body-color);
+    background-color: var(--tertiary-body-color);
 }
 
-.section__sub-section{
+.section__sub-section {
     padding: 2em 0;
     display: flex;
     justify-content: space-between;
 }
 
-.section__heading{
+.section__heading {
     color: white;
-    padding-top: 2em;
     padding-bottom: 0.7em;
     font-size: 5rem;
     margin: 0;
@@ -18,8 +18,7 @@
     letter-spacing: 0.1em;
 }
 
-.section__sub-section--reverse{
+.section__sub-section--reverse {
     display: flex;
     flex-direction: row-reverse;
 }
-

@@ -1,0 +1,10 @@
+:root{
+    /* base text, special text  */
+    --blue-light-theme-color: #354463;
+
+    /* base body */
+    --white-light-theme-color: white;
+
+    /* special body */
+    --black-light-theme-color: black;
+}

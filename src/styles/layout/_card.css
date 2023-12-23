@@ -1,4 +1,4 @@
-.card{
+.card {
     position: relative;
     padding: 2em;
     display: flex;
@@ -7,33 +7,39 @@
     gap: 1em;
 }
 
-.card--white{
-    background-color: white;
-    color: var(--primary-blue-color);
+.card--white {
+    background-color: var(--primary-body-color);
+    color: var(--secondary-text-color);
     width: fit-content;
     /* height: fit-content; */
 }
 
-.card--green{
-    background-color: var(--primary-green-color);
-    color: var(--primary-blue-color);
+.card--secondary-color {
+    background-color: var(--secondary-body-color);
+    color: var(--white-color);
 }
 
-.card--row{
+.card--green {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    color: var(--black-color);
+}
+
+.card--row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
 
-.card--without-spacing{
+.card--without-spacing {
     padding: 0;
 }
 
-.card__head{
+.card__head {
     position: absolute;
     top: -1em;
-    background-color: var(--primary-blue-color);
+    background-color: var(--secondary-body-color);
     color: white;
     width: fit-content;
     padding: 0.5em;
@@ -42,17 +48,17 @@
     z-index: 1;
 }
 
-.card__head--in-place{
+.card__head--in-place {
     position: static;
     top: 0em;
 }
 
-.card__head--white{
+.card__head--white {
     background-color: white;
-    color: var(--primary-blue-color); 
+    color: var(--secondary-text-color);
 }
 
-.card__head--center{
+.card__head--center {
     position: absolute;
     top: -1em;
     left: 50%;

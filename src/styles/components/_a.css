@@ -1,9 +1,9 @@
 .a--green {
-    color: var(--primary-green-color);
+    color: var(--primary-color);
 }
 
 .a--blue {
-    color: var(--primary-blue-color);
+    color: var(--secondary-text-color);
 }
 
 .a--nostyling{

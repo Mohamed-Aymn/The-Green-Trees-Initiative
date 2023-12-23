@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Green Trees Initiative</title>
     <link rel="icon" type="image/x-icon" href="../../assets/photos/favicon.ico">
+    <script src="https://kit.fontawesome.com/7541604022.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../dist/css/bundle.min.css">
 </head>
+
 <body>
 
     <main>
@@ -16,37 +19,74 @@
                     <div class="card__head">our team</div>
                     <h1 class="h1--large">Meet the team of people making it happen</h1>
                 </div>
-                <p class="text-section__text">our leaders set our global direction, goals and strategies, and support nearly 500 team members working in more thatn 20 countries around the world</p>
+                <p class="text-section__text">our leaders set our global direction, goals and strategies, and support
+                    nearly 500 team members working in more thatn 20 countries around the world</p>
             </div>
             <div class="people-section">
                 <div>
-                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg" src="person1"/></div>
+                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg"
+                            src="person1" /></div>
                     <div class="people-section__name-container">Person Name, Title Goes Here</div>
                 </div>
                 <div>
-                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg" src="person1"/></div>
+                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg"
+                            src="person1" /></div>
                     <div class="people-section__name-container">Person Name, Title Goes Here</div>
                 </div>
                 <div>
-                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg" src="person1"/></div>
+                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg"
+                            src="person1" /></div>
                     <div class="people-section__name-container">Person Name, Title Goes Here</div>
                 </div>
                 <div>
-                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg" src="person1"/></div>
-                <div class="people-section__name-container">Person Name, Title Goes Here</div>
+                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg"
+                            src="person1" /></div>
+                    <div class="people-section__name-container">Person Name, Title Goes Here</div>
+                </div>
+                <div>
+                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg"
+                            src="person1" /></div>
+                    <div class="people-section__name-container">Person Name, Title Goes Here</div>
+                </div>
+                <div>
+                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg"
+                            src="person1" /></div>
+                    <div class="people-section__name-container">Person Name, Title Goes Here</div>
+                </div>
             </div>
-            <div>
-                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg" src="person1"/></div>
-                <div class="people-section__name-container">Person Name, Title Goes Here</div>
-            </div>
-            <div>
-                    <div class="green people-section__img-container"><img src="../../assets/photos/profile.jpg" src="person1"/></div>
-                <div class="people-section__name-container">Person Name, Title Goes Here</div>
-            </div>
-        </div>
         </section>
     </main>
 
+    <!-- theme detection -->
+    <script>
+        var rootStyles = document.querySelector(':root');
+        const setLightTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--blue-light-theme-color)');
+        }
+        const setDarkTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--l-grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--black-dark-theme-color)');
+        }
+        switch (localStorage.getItem('theme')) {
+            case "dark":
+                setDarkTheme()
+                break;
+            default:
+                setLightTheme()
+                break;
+        }
+    </script>
+
     <script type="module" src="../../dist/js/bundle.min.js"></script>
 </body>
+
 </html>

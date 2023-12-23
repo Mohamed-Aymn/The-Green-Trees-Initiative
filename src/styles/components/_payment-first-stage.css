@@ -1,10 +1,11 @@
 .payment-first-stage{
     display: flex;
     justify-content: space-around;
-    position: relative;
-    padding: var(--md-space);
     align-items: center;
+    position: relative;
     gap: 2em;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 

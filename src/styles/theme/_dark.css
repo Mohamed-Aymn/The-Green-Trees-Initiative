@@ -1,0 +1,13 @@
+:root {
+    /* base text color */
+    --white-dark-theme-color: white;
+
+    /* base body color */
+    --black-dark-theme-color: black;
+
+    /* special body color */
+    --grey-dark-theme-color: #272727;
+
+    /* body color */
+    --l-grey-dark-theme-color: #727272;
+}

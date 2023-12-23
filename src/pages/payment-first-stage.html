@@ -1,86 +1,116 @@
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Green Trees Initiative</title>
     <link rel="icon" type="image/x-icon" href="../../assets/photos/favicon.ico">
     <link rel="stylesheet" href="../../dist/css/bundle.min.css">
+    <script src="https://kit.fontawesome.com/7541604022.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <main>
-        <div class="payment-first-stage two-column-div--top-margin">
+        <section class="payment-first-stage">
             <div class="green full-background">
                 <img src="../../assets/photos/donation-bg.jpg" alt="background-img" />
             </div>
-            <div class="form">
-                <form method="get" action="./payment-second-stage.html">
-                    <!-----------------------Start of price selection------------------------>
-                    <h1 class="h1--white--large">Choose a donation amount</h1>
-                    <div>
-                        <input id="donation-amount-1" type="radio" name="donation-amount" value="10">
-                        <label class="label-radio" for="donation-amount-1">
-                            <p class="label-radio__title label-radio__title--large">
-                                $10
-                            </p>
-                            <p class="label-radio__paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod.
-                            </p>
-                        </label>
-                        <input id="donation-amount-2" type="radio" name="donation-amount" value="50">
-                        <label class="label-radio" for="donation-amount-2">
-                            <p class="label-radio__title label-radio__title--large">
-                                $25
-                            </p>
-                            <p class="label-radio__paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod.
-                            </p>
-                        </label>
-                        <input id="donation-amount-3" type="radio" name="donation-amount" value="50">
-                        <label class="label-radio" for="donation-amount-3">
-                            <p class="label-radio__title label-radio__title--large">
-                                $50
-                            </p>
-                            <p class="label-radio__paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod.
-                            </p>
-                        </label>
-                    </div>
-                    <div class="form__custom-amount">
-                        <a href="" class="a--green">Enter a custom donation amount</a>  
-                    </div> 
-                    <!-----------------------End of price selection------------------------->
-        
-                    <!-----------------------Start of frequency selection------------------->
-                    <h1 class="h1--white--large">Choose a donation frequency</h1>
-                    <div class="form__frequency-selection">
-                        <input id="donation-frequency-1" type="radio" name="donation-frequency" value="monthly">
-                        <label class="label-radio" for="donation-frequency-1">
-                            <p class="label-radio__title">Monthly</p>
-                        </label>
-                        <input id="donation-frequency-2" type="radio" name="donation-frequency" value="onetime">
-                        <label class="label-radio" for="donation-frequency-2">
-                            <p class="label-radio__title">One time</p>
-                        </label>
-                    </div>
-                    <!-----------------------End of frequency selection--------------------->
-                    <div class="form__submission-span">
-                        <a href="../index.html" class="a--green">Cancel</a>
-                        <button type="submit" class="button--primary">
-                            Go to checkout
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <p class="stylized-text stylized-text--large">
+            <form class="form" method="get" action="./payment-second-stage.html">
+                <!-----------------------Start of price selection------------------------>
+                <h1 class="h1--white--large">Choose a donation amount</h1>
+                <div>
+                    <input id="donation-amount-1" type="radio" name="donation-amount" value="10">
+                    <label class="label-radio" for="donation-amount-1">
+                        <p class="label-radio__title label-radio__title--large">
+                            $10
+                        </p>
+                        <p class="label-radio__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod.
+                        </p>
+                    </label>
+                    <input id="donation-amount-2" type="radio" name="donation-amount" value="50">
+                    <label class="label-radio" for="donation-amount-2">
+                        <p class="label-radio__title label-radio__title--large">
+                            $25
+                        </p>
+                        <p class="label-radio__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod.
+                        </p>
+                    </label>
+                    <input id="donation-amount-3" type="radio" name="donation-amount" value="50">
+                    <label class="label-radio" for="donation-amount-3">
+                        <p class="label-radio__title label-radio__title--large">
+                            $50
+                        </p>
+                        <p class="label-radio__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod.
+                        </p>
+                    </label>
+                </div>
+                <div class="form__custom-amount">
+                    <a href="" class="a--green">Enter a custom donation amount</a>
+                </div>
+                <!-----------------------End of price selection------------------------->
+
+                <!-----------------------Start of frequency selection------------------->
+                <h1 class="h1--white--large">Choose a donation frequency</h1>
+                <div class="form__frequency-selection">
+                    <input id="donation-frequency-1" type="radio" name="donation-frequency" value="monthly">
+                    <label class="label-radio label-radio__title label-radio__title--small" for="donation-frequency-1">
+                        Monthly
+                    </label>
+                    <input id="donation-frequency-2" type="radio" name="donation-frequency" value="onetime">
+                    <label class="label-radio label-radio__title label-radio__title--small" for="donation-frequency-2">
+                        One time
+                    </label>
+                </div>
+                <!-----------------------End of frequency selection--------------------->
+                <div class="form__submission-span">
+                    <a href="../index.html" class="a--green">Cancel</a>
+                    <button type="submit" class="button--primary">
+                        Go to checkout
+                    </button>
+                </div>
+            </form>
+            <p class="stylized-text stylized-text--large stylized-text--white">
                 WE CAN SAVE<br>THE FUTURE
             </p>
-        </div> 
+        </section>
     </main>
-    
+
+    <!-- theme detection -->
+    <script>
+        var rootStyles = document.querySelector(':root');
+        const setLightTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--white-light-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--blue-light-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--blue-light-theme-color)');
+        }
+        const setDarkTheme = () => {
+            rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-text-color', 'var(--l-grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
+            rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
+            rootStyles.style.setProperty('--tertiary-body-color', 'var(--black-dark-theme-color)');
+        }
+        switch (localStorage.getItem('theme')) {
+            case "dark":
+                setDarkTheme()
+                break;
+            default:
+                setLightTheme()
+                break;
+        }
+    </script>
+
     <script type="module" src="../../dist/js/bundle.min.js"></script>
 </body>

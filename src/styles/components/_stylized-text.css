@@ -1,18 +1,28 @@
-.stylized-text{
-    color: white;
+.stylized-text {
     font-family: Balibrush;
 }
 
+.stylized-text--white {
+    color: var(--white-color);
+}
+
 /* sizes */
-.stylized-text--large{
+.stylized-text--large {
     font-size: 5rem;
 }
-.stylized-text--md{
+
+.stylized-text--md {
     font-size: 3rem;
     margin: 0;
 }
 
 /* colors */
-.stylized-text--blue{
+.stylized-text--blue {
     color: var(--primary-blue-color);
+}
+
+@media only screen and (max-width: 767px) {
+    .stylized-text--large {
+        font-size: 3.7rem;
+    }
 }

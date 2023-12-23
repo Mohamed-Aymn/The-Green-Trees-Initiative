@@ -1,0 +1,20 @@
+.float-button {
+    position: fixed;
+    bottom: var(--md-space);
+    right: var(--md-space);
+    z-index: 100;
+    width: var(--md-space);
+    height: var(--md-space);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border: none;
+}
+
+.float-button__content {
+    margin: auto 0;
+    font-size: 1.5rem;
+}

@@ -1,13 +1,12 @@
-.roles-section{
+.roles-section {
     padding: var(--md-space);
     height: fit-content;
     z-index: 1;
-    background-color: var(--primary-green-color);
-    color: var(--primary-blue-color);
+    background-color: var(--primary-color);
     position: relative;
 }
 
-.roles__text-container{
+.roles__text-container {
     max-width: 95vw;
     margin: 0 auto;
     display: flex;
@@ -15,7 +14,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .roles__text-container{
+    .roles__text-container {
         display: flex;
         flex-direction: column;
     }

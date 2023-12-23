@@ -2,16 +2,16 @@
     border-radius: 2em;
     padding: 1em 2em;
     border: none;
-    color: var(--primary-blue-color);
+    color: var(--secondary-text-color);
 }
 
 .input--form{
     padding: 1em 0em;
-    background-color: var(--primary-blue-color);
+    background-color: var(--secondary-body-color);
     outline: 0;
     border-width: 0 0 2px;
-    border-color: var(--primary-green-color);
-    color: var(--primary-green-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .input--form__select{
@@ -22,10 +22,6 @@
 .input--form--fullwidth{
     width: 100%;
 }
-
-/* .input--form__select--up{
-    margin-top: -1px;
-} */
 
 .input--form::placeholder{
     color: gray;
