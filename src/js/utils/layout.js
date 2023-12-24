@@ -1,16 +1,15 @@
 const navbar = async () => {
-    const currentPage = window.location.pathname;
-    const isIndexPage = currentPage.includes("about-us") ||
-        currentPage.includes("paymnet-first-stage") ||
-        currentPage.includes("paymnet-second-stage") ||
-        currentPage.includes("appreciation");
+    let currentUrl = window.location.href;
+    currentUrl = currentUrl.replace("http://", "");
+    var numberOfSlashes = currentUrl.split("/").length - 1;
+    const isIndexPage = numberOfSlashes == 0 || currentUrl.includes("index.html")
 
     const HTML = `
-        <a href="${!isIndexPage ? "" : "../"}index.html" class="navbar__logo">The Green<br>Trees Initiative</a>
+        <a href="${isIndexPage ? "" : "../"}index.html" class="navbar__logo">The Green<br>Trees Initiative</a>
         <ul class="navbar__links-container">
             <li><a href="https://github.com/gigachadteam/Very-Green-WebProject" class="navbar__links-container__link">Github</a></li>
-            <li><a href="${!isIndexPage ? "./pages/" : ""}about-us.html" class="navbar__links-container__link">About us</a></li>
-            <li><a href="${!isIndexPage ? "./pages/" : ""}payment-first-stage.html" class="navbar__links-container__link navbar__links-container__link--primary">Donate now</a></li>
+            <li><a href="${isIndexPage ? "./pages/" : ""}about-us.html" class="navbar__links-container__link">About us</a></li>
+            <li><a href="${isIndexPage ? "./pages/" : ""}payment-first-stage.html" class="navbar__links-container__link navbar__links-container__link--primary">Donate now</a></li>
         </ul>
         <div id="navbar__mobile-icon" class="navbar__icon-container">
             <i class="fa-solid fa-bars"></i>
@@ -19,12 +18,11 @@ const navbar = async () => {
             <i id="navbar__mobile-close-icon-conatiner__icon" class="fa-solid fa-x"></i>
             <ul class="navbar__mobile-display__items">
                 <li><a href="https://github.com/gigachadteam/Very-Green-WebProject" class="navbar__links-container__link">Github</a></li>
-                <li><a href="${!isIndexPage ? "./pages/" : ""}about-us.html" class="navbar__links-container__link">About us</a></li>
-                <li><a href="${!isIndexPage ? "./pages/" : ""}payment-first-stage.html" class="navbar__links-container__link navbar__links-container__link--primary">Donate now</a></li>
+                <li><a href="${isIndexPage ? "./pages/" : ""}about-us.html" class="navbar__links-container__link">About us</a></li>
+                <li><a href="${isIndexPage ? "./pages/" : ""}payment-first-stage.html" class="navbar__links-container__link navbar__links-container__link--primary">Donate now</a></li>
             </ul>
         </div>
     `;
-
     const tempContainer = document.createElement('nav');
     tempContainer.setAttribute("id", "navbar");
     tempContainer.innerHTML = HTML;
