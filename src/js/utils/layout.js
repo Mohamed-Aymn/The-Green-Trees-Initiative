@@ -1,6 +1,6 @@
 const navbar = async () => {
     let currentUrl = window.location.href;
-    currentUrl = currentUrl.replace("http://", "");
+    currentUrl = currentUrl.replace("://", "");
     var numberOfSlashes = currentUrl.split("/").length - 1;
     const isIndexPage = numberOfSlashes == 0 || currentUrl.includes("index.html")
 
