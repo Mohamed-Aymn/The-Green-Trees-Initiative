@@ -1,5 +1,59 @@
 # Styling
 
+## Features To Watch
+
+<details>
+    <summary>Dark/Light Theme</summary>
+    <br>
+    <p align="center">
+      <img src="../src/assets/photos/darkTheme.png" width="500" >
+    </p>
+    <pre>
+const setLightTheme = () => {
+    rootStyles.style.setProperty('--primary-text-color', 'var(--black-light-theme-color)');
+    rootStyles.style.setProperty('--secondary-text-color', 'var(--blue-light-theme-color)');
+    rootStyles.style.setProperty('--tertiary-text-color', 'var(--white-light-theme-color)');
+    rootStyles.style.setProperty('--primary-body-color', 'var(--white-light-theme-color)');
+    rootStyles.style.setProperty('--secondary-body-color', 'var(--blue-light-theme-color)');
+    rootStyles.style.setProperty('--tertiary-body-color', 'var(--blue-light-theme-color)');
+}
+const setDarkTheme = () => {
+    rootStyles.style.setProperty('--primary-text-color', 'var(--white-dark-theme-color)');
+    rootStyles.style.setProperty('--secondary-text-color', 'var(--l-grey-dark-theme-color)');
+    rootStyles.style.setProperty('--tertiary-text-color', 'var(--grey-dark-theme-color)');
+    rootStyles.style.setProperty('--primary-body-color', 'var(--black-dark-theme-color)');
+    rootStyles.style.setProperty('--secondary-body-color', 'var(--grey-dark-theme-color)');
+    rootStyles.style.setProperty('--tertiary-body-color', 'var(--black-dark-theme-color)');
+}
+    </pre>
+</details>
+
+<details>
+    <summary>Reusable code</summary>
+    <br>
+    <p align="center">
+      <img src="../src/assets/photos/reusability.png" width="500" >
+    </p>
+    <pre>
+.green {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+.green::after {
+    content: "";
+    position: absolute;
+    opacity: 0.50;
+    inset: 0;
+    filter: brightness(80%);
+    background: #40acb4;
+}
+.green img {
+    filter: grayscale(80%) sepia(40%) contrast(1.22);
+}
+    </pre>
+</details>
+
 ## Final Solution
 
 <pre>
@@ -192,6 +246,8 @@ color: #000;
 </ul>
 
 </details>
+
+<br>
 
 [Back To Top](#styling)
 
