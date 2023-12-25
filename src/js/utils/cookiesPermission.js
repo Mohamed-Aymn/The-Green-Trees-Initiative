@@ -4,7 +4,7 @@ export const cookiesPermission = async () => {
         <p class="cookies-message__text">
             This site uses cookies to offer you a better browsing experience.
         </p>
-        <div>
+        <div class="cookies-message__buttons-container">
             <button id="accept-all-cookies" class="button--primary" >Accept all cookies</button>
             <button id="accept-essential-cookies" class="button--tertiary" >Accept only essential ones</button>
         </div>
