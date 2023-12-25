@@ -1,0 +1,19 @@
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--primary-body-color);
+    padding: var(--md-space);
+    z-index: 99;
+    border-top: 0.3em solid var(--primary-color);
+    display: none;
+}
+
+.cookies-message__icon {
+    font-size: 5rem;
+}
+
+.cookies-message__text {
+    padding-bottom: var(--sm-space);
+}
