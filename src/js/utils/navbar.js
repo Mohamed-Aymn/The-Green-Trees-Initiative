@@ -38,10 +38,12 @@ export const navbar = async () => {
 
     navbarIcon.addEventListener("click", () => {
         navbarBody.style.right = "0";
+        document.body.style.overflowY = "hidden"
     });
 
     navbarCloseIcon.addEventListener("click", () => {
         navbarBody.style.right = "-100%";
+        document.body.style.overflowY = "scroll"
     });
 
 
