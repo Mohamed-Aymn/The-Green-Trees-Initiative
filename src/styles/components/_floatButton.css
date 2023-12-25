@@ -18,3 +18,11 @@
     margin: auto 0;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .float-button {
+        right: var(--sm-space);
+        bottom: var(--sm-space);
+    }
+}
