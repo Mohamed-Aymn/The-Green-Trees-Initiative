@@ -11,8 +11,9 @@ This project displays the ability to design a CSS (styling) folder structure and
 
 You can know more about low level/technical details by visiting Docs directory.
 
-- [Styling](Docs/Styling.md)
-- [UI/UX Design](Docs/UIUXDesign.md)
+- [Styling](docs/Styling.md)
+- [UI/UX Design](docs/UIUXDesign.md)
+- [JavaScript](docs/JavaScript.md)
 
 ---
 

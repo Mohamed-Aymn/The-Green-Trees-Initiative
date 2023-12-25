@@ -1,11 +1,10 @@
-.green{
+.green {
     position: relative;
     object-fit: cover;
-    /* height: 100%; */
     width: 100%;
 }
 
-.green::after{
+.green::after {
     content: "";
     position: absolute;
     opacity: 0.50;
@@ -14,6 +13,6 @@
     background: #40acb4;
 }
 
-.green img{
+.green img {
     filter: grayscale(80%) sepia(40%) contrast(1.22);
 }
