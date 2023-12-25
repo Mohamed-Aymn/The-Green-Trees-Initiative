@@ -12,6 +12,11 @@
     transition: 0.4s;
 }
 
+.button--tertiary {
+    color: var(--secondary-text-color);
+    background-color: transparent;
+}
+
 .button--full-width {
     width: 100%;
 }
