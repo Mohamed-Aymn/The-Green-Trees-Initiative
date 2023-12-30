@@ -31,6 +31,16 @@ export function paymentSecondStage() {
             let city = form.elements.city;
             valid = standardValidation(city, "City", 3);
 
+            let state = form.elements.state;
+            if(state.value == "default") {
+                state.parentElement.style.color = "red";
+                state.parentElement.firstChild.data = "State - Please select a valid state";
+            }
+            else {
+                state.parentElement.style.color = "white";
+                state.parentElement.firstChild.data = "State";
+            }
+
             let zip = form.elements.zip;
             valid = regexValidation(zip, "Zip code", 0, '^\\d{4,}$' , "Zip code - Must be atleast 4 in length and only digits");
 
