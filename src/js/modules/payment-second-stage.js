@@ -4,7 +4,7 @@ export function paymentSecondStage() {
 
     let confirmText = document.getElementById("confirm-text");
     if(confirmText) {
-        confirmText.innerHTML = "Click to confrim <br> your " + frequancy + " payment of $" + donation;
+        confirmText.innerHTML = "Click to confirm <br> your " + frequancy + " payment of $" + donation;
     }
 
     let stageTwoButton = document.getElementById("stage-two-button");
