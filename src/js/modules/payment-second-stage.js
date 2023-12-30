@@ -1,4 +1,9 @@
-export function paymentSecondStage() { 
+export function paymentSecondStage() {
+
+    let form = document.getElementById("stage-two-form");
+    let elementWidth = form.offsetWidth;
+    form.style.width = elementWidth+"px";
+
     let donation = sessionStorage.getItem("donation");
     let frequancy = sessionStorage.getItem("frequancy");
 
@@ -13,7 +18,6 @@ export function paymentSecondStage() {
             let valid = true;
 
             e.preventDefault();
-            let form = document.getElementById("stage-two-form");
 
             let firstName = form.elements.firstName;
             valid = standardValidation(firstName, "First name", 3);
