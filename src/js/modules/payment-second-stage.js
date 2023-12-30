@@ -1,4 +1,9 @@
-export function paymentSecondStage() { 
+export function paymentSecondStage() {
+
+    let form = document.getElementById("stage-two-form");
+    let elementWidth = form.offsetWidth;
+    form.style.width = elementWidth+"px";
+
     let donation = sessionStorage.getItem("donation");
     let frequancy = sessionStorage.getItem("frequancy");
 
@@ -13,7 +18,6 @@ export function paymentSecondStage() {
             let valid = true;
 
             e.preventDefault();
-            let form = document.getElementById("stage-two-form");
 
             let firstName = form.elements.firstName;
             valid = standardValidation(firstName, "First name", 3);
@@ -26,6 +30,16 @@ export function paymentSecondStage() {
 
             let city = form.elements.city;
             valid = standardValidation(city, "City", 3);
+
+            let state = form.elements.state;
+            if(state.value == "default") {
+                state.parentElement.style.color = "red";
+                state.parentElement.firstChild.data = "State - Please select a valid state";
+            }
+            else {
+                state.parentElement.style.color = "white";
+                state.parentElement.firstChild.data = "State";
+            }
 
             let zip = form.elements.zip;
             valid = regexValidation(zip, "Zip code", 0, '^\\d{4,}$' , "Zip code - Must be atleast 4 in length and only digits");
