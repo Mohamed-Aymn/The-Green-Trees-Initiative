@@ -15,27 +15,31 @@
             <div class="green full-background">
                 <img src="../assets/photos/finalpaymentkidsbg.jpg" alt="background-img" />
             </div>
-            <form class="form" method="get" action="./appreciation.html">
+            <form class="form" method="get" id="stage-two-form">
                 <h1 class="form__head">Your information</h1>
                 <div class="form__multi-elements-line">
                     <label class="form__field-header">
-                        <div>First name</div>
-                        <input class="input--form" type="text" name="firstname" placeholder="First name">
+                        <div>First name
+                            <input class="input--form" type="text" name="firstName" placeholder="First name">
+                        </div>
                     </label>
                     <label>
-                        <div class="form__field-header">Last name</div>
-                        <input class="input--form" type="text" name="lastname" placeholder="Last name">
+                        <div class="form__field-header">Last name
+                            <input class="input--form" type="text" name="lastName" placeholder="Last name">
+                        </div>
                     </label>
                 </div>
                 <label>
-                    <div class="form__field-header">Street</div>
-                    <input class="input--form input--form--fullwidth" type="text" name="Street"
+                    <div class="form__field-header">Street
+                        <input class="input--form input--form--fullwidth" type="text" name="street"
                         placeholder="Street address">
+                    </div>
                 </label>
                 <div class="form__multi-elements-line">
                     <label>
-                        <div class="form__field-header">City</div>
-                        <input class="input--form" type="text" name="city" placeholder="City name">
+                        <div class="form__field-header">City
+                            <input class="input--form" type="text" name="city" placeholder="city">
+                        </div>
                     </label>
                     <label>
                         <div class="form__field-header ">State</div>
@@ -47,42 +51,53 @@
                         </select>
                     </label>
                     <label>
-                        <div class="form__field-header">Zip code</div>
-                        <input class="input--form" type="text" name="zip" placeholder="Zip code">
+                        <div class="form__field-header">Zip code
+                            <input class="input--form" type="text" name="zip" placeholder="Zip code">
+                        </div>
                     </label>
                 </div>
                 <label>
-                    <div class="form__field-header">Email Address</div>
-                    <input class="input--form input--form--fullwidth" type="text" name="Email"
+                    <div class="form__field-header">Email Address
+                        <input class="input--form input--form--fullwidth" type="text" name="email"
                         placeholder="Email address">
+                    </div>
                 </label>
                 <h1 class="form__head">Payment information</h1>
                 <label>
-                    <div class="form__field-header">Credit card number</div>
-                    <input class="input--form input--form--fullwidth" type="text" name=CCN
+                    <div class="form__field-header">Credit card number
+                        <input class="input--form input--form--fullwidth" type="text" name=ccNum
                         placeholder="Credit card number">
+                    </div>
                 </label>
                 <div class="form__multi-elements-line">
                     <label>
                         <h1 class="form__field-header ">EXPRATION DATE</h1>
                         <div class="form__multi-elements-line">
-                            <input class="input--form input--form--smallwidth" type="text" name="expmonth"
+                            <div class="form__field-header">
+                                Exp Month
+                                <input class="input--form input--form--smallwidth" type="text" name="expmonth"
                                 placeholder="MM">
-                            <input class="input--form input--form--smallwidth" type="text" name="expyear"
+                            </div>
+                            <div>
+                                Exp Year
+                                <input class="input--form input--form--smallwidth" type="text" name="expyear"
                                 placeholder="YYYY">
+                            </div>
                         </div>
                     </label>
                     <label>
                         <h1 class="form__field-header ">SECURITY CODE</h1>
-                        <input class="input--form input--form--smallwidth" type="text" name="expiration"
-                            placeholder="MM">
+                        <div>
+                            Digits in the back
+                            <input class="input--form input--form--smallwidth" type="text" name="digits"
+                            placeholder="ABC">
+                        </div>
                     </label>
                 </div>
-                <div class="form__head form__head--margintop">Click the button to confirm your<br>donation of $10,
-                    recurring monthley</div>
+                <div class="form__head form__head--margintop" id="confirm-text">Click to confirm payment</div>
                 <div class="form__submission-span">
                     <a href="./payment-first-stage.html" class="a--green">Back</a>
-                    <button type="submit" class="button--primary">
+                    <button type="submit" class="button--primary" id="stage-two-button">
                         Go to checkout
                     </button>
                 </div>
