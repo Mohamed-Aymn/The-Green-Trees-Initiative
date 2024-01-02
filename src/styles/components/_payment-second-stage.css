@@ -1,17 +1,26 @@
-.payment-second-stage{
+.payment-second-stage {
     height: fit-content;
     position: relative;
     padding: var(--md-space);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2em;
+    /* gap: 2em; */
     overflow: hidden;
     min-height: 100vh;
 }
 
+.payment-second-stage>*:not(:last-child) {
+    margin-right: var(--sm-space);
+}
+
 @media only screen and (max-width: 900px) {
-    .payment-second-stage{
+    .payment-second-stage {
         flex-direction: column-reverse;
+    }
+
+    .payment-second-stage>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: var(--sm-space);
     }
 }

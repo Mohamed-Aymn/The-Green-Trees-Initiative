@@ -5,13 +5,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: var(--md-space);
+    /* gap: var(--md-space); */
     padding: var(--lg-space);
+}
+
+/* Apply margin to all children except the last one, instead of using gap */
+.contact-us>*:not(:last-child) {
+    margin-right: var(--sm-space);
 }
 
 .contact-us__input-fields {
     display: flex;
-    gap: var(--sm-space);
+    /* gap: var(--sm-space); */
+}
+
+/* Apply margin to all children except the last one, instead of using gap */
+.contact-us__input-fields>*:not(:last-child) {
+    margin-right: var(--sm-space);
 }
 
 @media only screen and (max-width: 767px) {

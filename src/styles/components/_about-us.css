@@ -19,8 +19,14 @@
     background-color: var(--secondary-body-color);
     color: var(--white-color);
     padding: 1em 2em;
-    translate: 2.5% -50%;
     z-index: 5;
+
+    -moz-transform: translate(2.5%, -50%);
+    -webkit-transform: translate(2.5%, -50%);
+    -ms-transform: translate(2.5%, -50%);
+    -o-transform: translate(2.5%, -50%);
+    transform: translate(2.5%, -50%);
+    translate: 2.5% -50%;
 }
 
 .people-section__img-container {

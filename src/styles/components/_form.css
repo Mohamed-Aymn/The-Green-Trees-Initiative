@@ -1,65 +1,89 @@
-.form{
+.form {
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 5%;
     height: fit-content;
     background-color: var(--secondary-body-color);
+    /* gap: 1em; */
 }
 
-.form__custom-amount{
+.form>*:not(:last-child) {
+    margin-right: 1em;
+}
+
+.form__custom-amount {
     margin-top: 5%;
     margin-bottom: 10%;
 }
 
-.form__multi-elements-line{
+.form__multi-elements-line {
     display: flex;
-    gap: 1em;
+    /* gap: 1em; */
 }
 
-.form__multi-elements-line label{
+.form__multi-elements-line>*:not(:last-child) {
+    margin-right: 1em;
+}
+
+.form__multi-elements-line label {
     width: 100%;
 }
 
-.form__multi-elements-line label input, .form__multi-elements-line label select {
+.form__multi-elements-line label input,
+.form__multi-elements-line label select {
     width: 100%;
 }
 
-.form__multi-elements-line--no-gap{
-    gap: 0;
+.form__multi-elements-line--no-gap {
+    /* gap: 0; */
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
-.form__frequency-selection{
+.form__frequency-selection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.form__field-header{
+.form__field-header {
     color: white;
 }
 
-.form__head{
+.form__head {
     color: white;
     font-size: 150%;
 }
 
-.form__submit-button{
+.form__submit-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: var(--md-space) 0;
 }
 
-.form__submission-span{
+.form__submission-span {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 2em;
 }
 
-.form__submission-button{
+.form__submission-button {
     color: var(--scondary-text-color);
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     transition: 0.4s;
+}
+
+@media only screen and (max-width: 767px) {
+    .form>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .form__multi-elements-line>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
 }
