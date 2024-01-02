@@ -2,12 +2,16 @@
     width: 100wh;
     min-height: 100vh;
     position: relative;
-    padding: 0 var(--md-space);
+    padding: var(--md-space);
     /* height: 100vh; */
     display: flex;
     justify-content: space-around;
-    gap: 2em;
+    /* gap: 2em; */
     align-items: center;
+}
+
+.hero>*:not(:last-child) {
+    margin-right: var(--sm-space);
 }
 
 .hero::after {

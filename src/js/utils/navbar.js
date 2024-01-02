@@ -55,10 +55,10 @@ export const navbar = async () => {
 
         if (prevScrollPos > currentScrollPos) {
             // Scrolling up, show navbar
-            navbarElement.style.transform = "translateY(0)";
+            navbarElement.style.transform = "translateX(-50%) translateY(0)";
         } else {
             // Scrolling down, hide navbar
-            navbarElement.style.transform = `translateY(-${navbarElement.offsetHeight}px)`;
+            navbarElement.style.transform = `translateX(-50%) translateY(-${navbarElement.offsetHeight}px)`;
         }
 
         prevScrollPos = currentScrollPos;

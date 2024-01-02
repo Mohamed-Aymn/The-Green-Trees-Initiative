@@ -10,7 +10,11 @@
     max-width: 95vw;
     margin: 0 auto;
     display: flex;
-    gap: 2em;
+    /* gap: 2em; */
+}
+
+.roles__text-container>*:not(:last-child) {
+    margin-right: var(--sm-space);
 }
 
 @media only screen and (max-width: 767px) {

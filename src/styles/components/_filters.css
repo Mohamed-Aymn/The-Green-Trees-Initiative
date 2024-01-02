@@ -8,9 +8,18 @@
     content: "";
     position: absolute;
     opacity: 0.50;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     inset: 0;
+    background-color: #40acb4;
+
     filter: brightness(80%);
-    background: #40acb4;
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    -ms-filter: brightness(80%);
+    -o-filter: brightness(80%);
 }
 
 .green img {

@@ -1,6 +1,5 @@
-html *
-{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -12,27 +11,27 @@ body {
     color: var(--primary-text-color);
 }
 
-main{
+main {
     margin: 0;
     padding: 0;
-    padding-top: var(--md-space);
+    /* padding-top: var(--md-space); */
     border: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1em ;
-    padding-bottom: 1em ;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    gap: 7em;
+    /* gap: 7em; */
     max-width: 95vw;
     margin: auto;
     padding: var(--md-space);
@@ -42,27 +41,37 @@ footer{
     box-sizing: content-box;
 }
 
-img{
-    width: 100%; 
-    height: 100%;
-    object-fit: cover; 
+footer>*:not(:last-child) {
+    margin-right: var(--sm-space);
 }
 
-section{
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
     max-width: var(--max-page-width);
     margin-left: auto;
     margin-right: auto;
     box-sizing: content-box;
     padding: var(--md-space);
+    padding-top: var(--lg-space);
 }
 
 @media only screen and (max-width: 1366px) {
-    footer{
+    footer {
         display: flex;
         flex-direction: column;
     }
 
-    section{
+    footer>*:not(:last-child) {
+        margin-bottom: var(--sm-space);
+    }
+
+    section {
         padding: var(--sm-space);
+        padding-top: var(--lg-space);
     }
 }
