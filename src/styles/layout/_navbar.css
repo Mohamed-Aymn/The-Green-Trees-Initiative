@@ -64,12 +64,18 @@
 .navbar__mobile-display__items {
     display: flex;
     flex-direction: column;
-    gap: var(--md-space);
+    /* gap: var(--md-space); */
     list-style: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
+.navbar__mobile-display__items>*:not(:last-child) {
+    margin-right: var(--sm-space);
+}
+
+
 
 #navbar__mobile-close-icon-conatiner__icon {
     position: absolute;
@@ -113,8 +119,8 @@
         padding-left: var(--sm-space);
     }
 
-    .navbar__links-container {
-        gap: 0.2em;
+    .navbar__links-container>*:not(:last-child) {
+        margin-bottom: var(--sm-space);
     }
 
     #navbar__mobile-icon {
@@ -125,4 +131,8 @@
         display: none;
     }
 
+    .navbar__mobile-display__items>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: var(--sm-space);
+    }
 }

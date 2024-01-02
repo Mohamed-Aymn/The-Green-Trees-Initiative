@@ -25,4 +25,8 @@
     .stylized-text--large {
         font-size: 3.7rem;
     }
+
+    .stylized-text--center {
+        text-align: center;
+    }
 }

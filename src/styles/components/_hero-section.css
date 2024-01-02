@@ -2,7 +2,8 @@
     width: 100wh;
     min-height: 100vh;
     position: relative;
-    padding: var(--md-space);
+    /* padding: var(--md-space);
+    padding-top: var(--lg-space); */
     /* height: 100vh; */
     display: flex;
     justify-content: space-around;
@@ -45,6 +46,11 @@
     .hero {
         flex-direction: column;
         padding: 0 var(--sm-space);
+    }
+
+    .hero>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: var(--sm-space);
     }
 
     .hero__card {
