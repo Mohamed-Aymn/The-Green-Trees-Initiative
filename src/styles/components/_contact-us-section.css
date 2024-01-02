@@ -41,4 +41,9 @@
         margin-right: 0;
         margin-bottom: var(--sm-space);
     }
+
+    .contact-us__input-fields>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: var(--sm-space);
+    }
 }
